@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-TW">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>漫教工坊 ComicEdu Studio - 劇本設計</title>
+    <script src="./vendor/tailwindcss.js"></script>
+<link href="./vendor/material-symbols.css" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="./css/global.css">
+    <script src="./js/tailwind-config.js"></script>
+</head>
+
+<body class="bg-surface font-body text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <!-- TopNavBar -->
+    <header
+        class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200/50 dark:border-slate-800/50 shadow-sm">
+        <div class="flex justify-between items-center h-16 px-6 w-full">
+            <div class="flex items-center gap-8">
+                <span class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100 font-headline">漫教工坊
+                    ComicEdu Studio</span>
+                <nav class="hidden md:flex gap-6">
+                    <a class="font-['Plus_Jakarta_Sans','PingFang_TC'] font-semibold text-sm text-slate-600 dark:text-slate-400 hover:text-indigo-500 dark:hover:text-indigo-300 transition-colors"
+                        href="#">教學文件</a>
+                    <a class="font-['Plus_Jakarta_Sans','PingFang_TC'] font-semibold text-sm text-slate-600 dark:text-slate-400 hover:text-indigo-500 dark:hover:text-indigo-300 transition-colors"
+                        href="#">範例展示</a>
+                    <a class="font-['Plus_Jakarta_Sans','PingFang_TC'] font-semibold text-sm text-slate-600 dark:text-slate-400 hover:text-indigo-500 dark:hover:text-indigo-300 transition-colors"
+                        href="#">定價方案</a>
+                </nav>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="flex gap-2">
+                    <button class="p-2 text-slate-500 hover:bg-slate-100 rounded-full transition-all">
+                        <span class="material-symbols-outlined">notifications</span>
+                    </button>
+                    <button class="p-2 text-slate-500 hover:bg-slate-100 rounded-full transition-all">
+                        <span class="material-symbols-outlined">settings</span>
+                    </button>
+                </div>
+                <button
+                    class="px-4 py-2 bg-indigo-600 text-white font-semibold text-sm rounded-md active:scale-95 duration-200 shadow-lg shadow-indigo-600/20">開始創作</button>
+                <div class="h-8 w-8 rounded-full bg-slate-200 border border-slate-300 overflow-hidden">
+                    <img alt="使用者頭像" class="w-full h-full object-cover" data-alt="User avatar illustration"
+                        src="./assets/ui-image-07.jpg" />
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="pt-16 flex min-h-screen">
+        <!-- SideNavBar (Left Panel) -->
+        <aside
+            class="h-screen w-64 fixed left-0 top-16 flex flex-col border-r border-slate-200 dark:border-slate-800 py-4 bg-slate-50 dark:bg-slate-900">
+            <div class="px-6 mb-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center text-white">
+                        <span class="material-symbols-outlined"
+                            style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-sm">創作進度</h3>
+                        <p class="text-xs text-slate-500">第 1 步：劇本設計</p>
+                    </div>
+                </div>
+                <div class="w-full bg-slate-200 h-1.5 rounded-full overflow-hidden">
+                    <div class="bg-indigo-600 h-full w-1/5"></div>
+                </div>
+            </div>
+            <nav class="flex-1 space-y-1">
+                <a class="mx-2 px-4 py-3 flex items-center gap-3 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 font-bold border-r-4 border-indigo-600 transition-all duration-200 ease-in-out"
+                    href="#">
+                    <span class="material-symbols-outlined">edit_note</span>
+                    <span class="text-sm">劇本設計</span>
+                </a>
+                <a class="mx-2 px-4 py-3 flex items-center gap-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200 ease-in-out"
+                    href="#">
+                    <span class="material-symbols-outlined">face</span>
+                    <span class="text-sm">角色設定</span>
+                </a>
+                <a class="mx-2 px-4 py-3 flex items-center gap-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200 ease-in-out"
+                    href="#">
+                    <span class="material-symbols-outlined">grid_view</span>
+                    <span class="text-sm">分鏡佈局</span>
+                </a>
+                <a class="mx-2 px-4 py-3 flex items-center gap-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200 ease-in-out"
+                    href="#">
+                    <span class="material-symbols-outlined">auto_awesome</span>
+                    <span class="text-sm">漫漫生成</span>
+                </a>
+                <a class="mx-2 px-4 py-3 flex items-center gap-3 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200 ease-in-out"
+                    href="#">
+                    <span class="material-symbols-outlined">ios_share</span>
+                    <span class="text-sm">導出預覽</span>
+                </a>
+            </nav>
+            <div class="mt-auto px-4 pb-6 space-y-2">
+                <button
+                    class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-secondary-container text-on-secondary-container font-bold text-sm hover:brightness-95 transition-all active:scale-95 shadow-md">
+                    <span class="material-symbols-outlined">lightbulb</span>
+                    獲取靈感
+                </button>
+                <div class="pt-4 space-y-1 border-t border-slate-200/50">
+                    <a class="px-4 py-2 flex items-center gap-3 text-slate-500 text-xs hover:text-indigo-600" href="#">
+                        <span class="material-symbols-outlined text-lg">help</span>
+                        幫助中心
+                    </a>
+                    <a class="px-4 py-2 flex items-center gap-3 text-slate-500 text-xs hover:text-indigo-600" href="#">
+                        <span class="material-symbols-outlined text-lg">dark_mode</span>
+                        切換主題
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <!-- Center Workspace (Main Content) -->
+        <section class="ml-64 mr-80 flex-1 p-8 bg-surface-container-low min-h-screen">
+            <div class="max-w-4xl mx-auto space-y-8">
+                <!-- Input Form Area -->
+                <!-- 教材上傳區塊 -->
+                <div class="bg-surface-container-lowest rounded-xl p-8 shadow-sm border border-outline-variant/20">
+                    <div class="flex items-center gap-2 mb-6 text-primary">
+                        <span class="material-symbols-outlined text-3xl">upload_file</span>
+                        <h2 class="text-xl font-bold font-headline">教材上傳（選填）</h2>
+                    </div>
+                    <p class="text-sm text-slate-500 mb-4">上傳您的教材檔案（PDF / TXT），AI 將自動分析並提供三種教學漫畫方案供您選擇。</p>
+                    <div class="flex items-center gap-4">
+                        <label id="upload-area" class="flex-1 flex flex-col items-center justify-center py-8 border-2 border-dashed border-slate-300 rounded-xl cursor-pointer hover:border-primary hover:bg-primary/5 transition-all">
+                            <span class="material-symbols-outlined text-4xl text-slate-400 mb-2">cloud_upload</span>
+                            <span class="text-sm font-semibold text-slate-500">點擊或拖曳上傳教材</span>
+                            <span class="text-xs text-slate-400 mt-1">支援 PDF、TXT 格式</span>
+                            <input id="material-file-input" type="file" accept=".pdf,.txt,.doc,.docx" class="hidden" />
+                        </label>
+                    </div>
+                    <div id="upload-status" class="hidden mt-4"></div>
+                    <!-- AI 分析出的三種方案 -->
+                    <div id="material-plans" class="hidden mt-6 space-y-4"></div>
+                </div>
+
+                <!-- 教材核心設定 -->
+                <div class="bg-surface-container-lowest rounded-xl p-8 shadow-sm border border-outline-variant/20">
+                    <div class="flex items-center gap-2 mb-6 text-primary">
+                        <span class="material-symbols-outlined text-3xl">stylus</span>
+                        <h2 class="text-xl font-bold font-headline">教材核心設定</h2>
+                    </div>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="col-span-2 space-y-2">
+                            <label class="text-sm font-semibold text-on-surface-variant flex items-center gap-2">
+                                <span class="material-symbols-outlined text-lg">topic</span> 教材主題
+                            </label>
+                            <input id="input-topic"
+                                class="w-full px-4 py-3 rounded-md bg-surface border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm outline-none"
+                                placeholder="例如：光合作用的奧秘" type="text" />
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-semibold text-on-surface-variant flex items-center gap-2">
+                                <span class="material-symbols-outlined text-lg">school</span> 學科
+                            </label>
+                            <select id="input-subject"
+                                class="w-full px-4 py-3 rounded-md bg-surface border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm outline-none">
+                                <option>自然科學</option>
+                                <option>數學</option>
+                                <option>社會語文</option>
+                                <option>藝術</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-semibold text-on-surface-variant flex items-center gap-2">
+                                <span class="material-symbols-outlined text-lg">groups</span> 年級
+                            </label>
+                            <select id="input-grade"
+                                class="w-full px-4 py-3 rounded-md bg-surface border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm outline-none">
+                                <option>國小高年級</option>
+                                <option>國中階段</option>
+                                <option>高中階段</option>
+                            </select>
+                        </div>
+                        <div class="col-span-2 space-y-2">
+                            <label class="text-sm font-semibold text-on-surface-variant flex items-center gap-2">
+                                <span class="material-symbols-outlined text-lg">target</span> 教學目標
+                            </label>
+                            <textarea id="input-objective"
+                                class="w-full px-4 py-3 rounded-md bg-surface border border-outline-variant focus:border-primary focus:ring-1 focus:ring-primary transition-all text-sm outline-none resize-none"
+                                placeholder="學生將學會..." rows="2"></textarea>
+                        </div>
+                        <div class="col-span-2 space-y-2">
+                            <label class="text-sm font-semibold text-on-surface-variant flex items-center gap-2">
+                                <span class="material-symbols-outlined text-lg">palette</span> 故事風格
+                            </label>
+                            <div class="flex gap-4">
+                                <label class="flex-1 cursor-pointer">
+                                    <input checked="" class="hidden peer" name="style" type="radio" />
+                                    <div
+                                        class="p-3 border border-outline-variant rounded-md text-center text-sm peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary transition-all">
+                                        冒險探索</div>
+                                </label>
+                                <label class="flex-1 cursor-pointer">
+                                    <input class="hidden peer" name="style" type="radio" />
+                                    <div
+                                        class="p-3 border border-outline-variant rounded-md text-center text-sm peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary transition-all">
+                                        日常溫馨</div>
+                                </label>
+                                <label class="flex-1 cursor-pointer">
+                                    <input class="hidden peer" name="style" type="radio" />
+                                    <div
+                                        class="p-3 border border-outline-variant rounded-md text-center text-sm peer-checked:bg-primary peer-checked:text-white peer-checked:border-primary transition-all">
+                                        科幻懸疑</div>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- 漫畫頁數選擇 -->
+                        <div class="col-span-2 space-y-2">
+                            <label class="text-sm font-semibold text-on-surface-variant flex items-center gap-2">
+                                <span class="material-symbols-outlined text-lg">auto_stories</span> 漫畫頁數
+                            </label>
+                            <select id="input-pageCount" class="w-full p-3 border border-outline-variant rounded-md text-sm bg-white focus:border-primary focus:ring-1 focus:ring-primary transition-all">
+                                <option value="2">2 頁</option>
+                                <option value="3" selected>3 頁</option>
+                                <option value="4">4 頁</option>
+                                <option value="5">5 頁</option>
+                                <option value="6">6 頁</option>
+                            </select>
+                            <p class="text-xs text-slate-400">多頁模式將啟用「長劇本」功能，由 AI 先規劃整體故事再逐頁生成。</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- AI Generation Area -->
+                <div
+                    class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/20 overflow-hidden">
+                    <div
+                        class="p-6 border-b border-surface-container flex justify-between items-center bg-white/50 custom-glass">
+                        <div class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary"
+                                style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+                            <span class="font-bold">AI 劇本預覽</span>
+                        </div>
+                        <button id="generate-script-btn"
+                            class="flex items-center gap-2 px-4 py-2 bg-secondary-container text-on-secondary-container rounded-md text-sm font-bold hover:shadow-md transition-all active:scale-95">
+                            <span class="material-symbols-outlined text-lg">edit_document</span>
+                            生成劇本
+                        </button>
+                    </div>
+                    <div id="script-preview" class="p-8 space-y-12 max-h-[600px] overflow-y-auto">
+                        <div class="flex flex-col items-center justify-center py-16 gap-4 text-slate-400">
+                            <span class="material-symbols-outlined text-5xl opacity-50">menu_book</span>
+                            <p class="text-sm">尚未生成劇本。請填寫左側教材設定後，點擊「生成劇本」開始創作。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 border-t border-surface-container flex justify-end">
+                    <button id="btn-enter-characters" onclick="goToNextStep()" disabled
+                        class="flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-xl font-bold hover:shadow-md transition-all active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:shadow-none disabled:active:scale-100">
+                        進入 角色設定
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- Right Panel (AI Assistant) -->
+        <aside
+            class="fixed right-0 top-16 h-screen w-80 bg-white dark:bg-slate-950 border-l border-slate-200 dark:border-slate-800 flex flex-col pt-6 pb-16">
+            <div class="px-6 pb-4 border-b border-slate-100">
+                <div class="flex items-center gap-2 text-primary">
+                    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bolt</span>
+                    <h3 class="font-bold font-headline">AI 創作夥伴</h3>
+                </div>
+                <p class="text-xs text-slate-400 mt-1">與我討論劇本與概念</p>
+            </div>
+            <div id="chatbot-messages" class="flex-1 overflow-y-auto p-4 space-y-4">
+                <div
+                    class="bg-indigo-50 p-3 rounded-xl rounded-tl-none text-sm text-indigo-900 mr-8 border border-indigo-100">
+                    嗨！我是 ComicEdu AI。您想做什麼主題的漫畫呢？如果還沒想法也可以跟我討論哦！
+                </div>
+            </div>
+            <!-- Chatbot Input -->
+            <div class="p-4 border-t border-slate-100 bg-slate-50 dark:bg-slate-900">
+                <div class="space-y-2">
+                    <p class="text-[10px] font-bold text-slate-400 px-2 uppercase tracking-widest">提問優化</p>
+                    <div
+                        class="bg-white dark:bg-slate-950 rounded-xl p-3 flex items-end gap-2 border border-slate-200 dark:border-slate-800 shadow-sm">
+                        <textarea id="chatbot-input"
+                            class="bg-transparent border-none focus:ring-0 text-sm w-full resize-none min-h-[50px] max-h-[120px]"
+                            placeholder="輸入您的想法或問題..."></textarea>
+                        <button id="chatbot-send"
+                            class="p-2 bg-primary text-white rounded-lg active:scale-90 transition-all flex-shrink-0">
+                            <span class="material-symbols-outlined text-sm">send</span>
+                        </button>
+                    </div>
+                    <div id="assistant-status" class="hidden text-[10px] font-bold text-indigo-500 px-2 animate-pulse">
+                        AI 正在思考...</div>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full py-8 mt-auto bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 ml-64">
+        <div class="flex flex-col items-center gap-4 text-center">
+            <div class="flex gap-6">
+                <a class="text-slate-500 hover:text-slate-900 dark:hover:text-slate-100 transition-colors font-['Manrope'] text-xs"
+                    href="#">使用條款</a>
+                <a class="text-slate-500 hover:text-slate-900 dark:hover:text-slate-100 transition-colors font-['Manrope'] text-xs"
+                    href="#">隱私政策</a>
+                <a class="text-slate-500 hover:text-slate-900 dark:hover:text-slate-100 transition-colors font-['Manrope'] text-xs"
+                    href="#">聯絡支援</a>
+            </div>
+            <p class="font-['Manrope'] text-xs text-slate-400 dark:text-slate-600">© 2026 ComicEdu Studio 漫教工坊. 版權所有.
+            </p>
+        </div>
+    </footer>
+    <script src="./js/config.js?v=8"></script>
+    <script src="./js/step1_script.js?v=7"></script>
+</body>
+
+</html>

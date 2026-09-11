@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-TW"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>漫教工坊 ComicEdu Studio - 用 AI，把教材變成漫畫</title>
+<script src="./vendor/tailwindcss.js"></script>
+<link href="./vendor/material-symbols.css" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="./css/global.css?v=6">
+    <script src="./js/tailwind-config.js"></script>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200/50 dark:border-slate-800/50 shadow-sm">
+<div class="flex justify-between items-center h-16 px-6 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-8">
+<a href="Portal.html" class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100 font-headline">漫教工坊 ComicEdu Studio</a>
+<div class="hidden md:flex gap-6 items-center">
+<a class="font-['Plus_Jakarta_Sans','PingFang_TC'] font-semibold text-sm text-indigo-600 dark:text-indigo-400 transition-colors" href="#workflow">創作流程</a>
+<a class="font-['Plus_Jakarta_Sans','PingFang_TC'] font-semibold text-sm text-slate-600 dark:text-slate-400 hover:text-indigo-500 dark:hover:text-indigo-300 transition-colors" href="#showcase-grid">作品範例</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden sm:block text-slate-600 dark:text-slate-400 font-semibold text-sm hover:text-indigo-500 transition-colors">登入</button>
+<button class="bg-primary text-on-primary px-5 py-2 rounded-md font-semibold text-sm active:scale-95 duration-200 hover:bg-primary-container">開始創作</button>
+<div class="flex items-center gap-2 ml-2 pl-4 border-l border-outline-variant">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">notifications</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">settings</span>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-surface py-20 lg:py-32">
+<div class="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-96 h-96 bg-primary-fixed rounded-full blur-3xl opacity-30"></div>
+<div class="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-80 h-80 bg-secondary-fixed rounded-full blur-3xl opacity-20"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 bg-secondary-container px-3 py-1 rounded-full text-on-secondary-container text-xs font-bold tracking-wider uppercase">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+                        AI Powered EdTech
+                    </div>
+<h1 class="text-5xl lg:text-7xl font-extrabold font-headline leading-tight tracking-tight text-on-surface">
+                        「用 AI，把教材<br/><span class="text-primary">變成漫畫</span>」
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                        賦予老師快速製作高品質教材的能力。漫教工坊將複雜的創作流程簡化，讓教學內容不再是枯燥的文字，而是充滿吸引力的視覺敘事。
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-2 shadow-lg hover:shadow-primary/20 transition-all active:scale-95">
+                            立即開始創作
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<a href="https://www.youtube.com/watch?v=0d4bQ4J_vzw" target="_blank" rel="noopener noreferrer" class="bg-surface-container-high text-on-surface px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-2 hover:bg-surface-container-highest transition-all">
+                            觀看教學影片
+                            <span class="material-symbols-outlined">play_circle</span>
+</a>
+</div>
+</div>
+<div class="relative">
+<div class="bg-surface-container-lowest p-4 rounded-2xl comic-panel-shadow border border-outline-variant/30 relative z-20">
+<img alt="Teaching materials turned into comic" class="rounded-xl w-full h-[500px] object-cover" data-alt="Dynamic comic panel showing a classroom science experiment in manga style" src="./assets/ui-image-03.jpg"/>
+<!-- AI Bubble UI Overlay -->
+<div class="absolute -right-8 top-12 glass-effect p-4 rounded-2xl shadow-xl border border-white/50 max-w-[200px] hidden md:block">
+<div class="flex items-center gap-2 mb-2">
+<span class="w-3 h-3 bg-secondary rounded-full animate-pulse"></span>
+<span class="text-xs font-bold text-secondary">AI 正在生成角色...</span>
+</div>
+<div class="space-y-2">
+<div class="h-2 w-full bg-surface-container-highest rounded"></div>
+<div class="h-2 w-3/4 bg-surface-container-highest rounded"></div>
+</div>
+</div>
+</div>
+<!-- Decorative Frame -->
+<div class="absolute -bottom-6 -left-6 w-48 h-48 bg-secondary-fixed rounded-2xl -z-10 rotate-6 opacity-40"></div>
+</div>
+</div>
+</section>
+<!-- Function Flow Section -->
+<section id="workflow" class="py-24 bg-white scroll-mt-20">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-20 space-y-4">
+<h2 class="text-4xl font-bold font-headline text-on-surface">5 步驟，完成你的數位漫畫教材</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">從概念到成品，我們的 AI 助理將在每個環節引導您。專業的創作流程，現在只需幾分鐘。</p>
+</div>
+<!-- Bento Grid Flow -->
+<div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+<!-- Step 1: Script -->
+<div class="md:col-span-2 bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between group hover:border-primary/30 transition-all">
+<div>
+<div class="w-12 h-12 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">edit_note</span>
+</div>
+<h3 class="text-xl font-bold mb-2">01 腳本設計</h3>
+<p class="text-sm text-on-surface-variant">輸入您的教學大綱，AI 自動轉化為分鏡劇本，規劃精彩的對話與場景。</p>
+</div>
+<div class="mt-8 bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+<div class="flex gap-2 items-center mb-3">
+<div class="w-6 h-6 rounded-full bg-primary-fixed"></div>
+<div class="h-2 w-24 bg-slate-100 rounded"></div>
+</div>
+<div class="space-y-2">
+<div class="h-2 w-full bg-slate-50 rounded"></div>
+<div class="h-2 w-full bg-slate-50 rounded"></div>
+<div class="h-2 w-2/3 bg-slate-50 rounded"></div>
+</div>
+</div>
+</div>
+<!-- Step 2: Character -->
+<div class="md:col-span-3 bg-indigo-50/50 p-8 rounded-2xl border border-indigo-100 flex flex-col md:flex-row gap-8 items-center group hover:border-primary/30 transition-all">
+<div class="flex-1">
+<div class="w-12 h-12 bg-indigo-600/10 text-indigo-600 rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">face</span>
+</div>
+<h3 class="text-xl font-bold mb-2">02 角色設定</h3>
+<p class="text-sm text-on-surface-variant">選擇內建專業角色，或透過描述生成專屬教師形象。支援多種表情與姿態設定。</p>
+</div>
+<div class="flex -space-x-6 overflow-visible p-4">
+<img alt="Character profile" class="w-32 h-32 rounded-full border-4 border-white shadow-xl object-cover transform rotate-[-6deg]" data-alt="Stylish character profile illustration for a digital comic teacher" src="./assets/ui-image-09.jpg"/>
+<img alt="Character variation" class="w-32 h-32 rounded-full border-4 border-white shadow-xl object-cover transform translate-y-4" data-alt="Anime style teacher character with different expressions" src="./assets/ui-image-06.jpg"/>
+</div>
+</div>
+<!-- Step 3: Layout -->
+<div class="md:col-span-2 bg-slate-50 p-8 rounded-2xl border border-slate-100 group hover:border-primary/30 transition-all">
+<div class="w-12 h-12 bg-slate-200 text-on-surface-variant rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">grid_view</span>
+</div>
+<h3 class="text-xl font-bold mb-2">03 分鏡佈局</h3>
+<p class="text-sm text-on-surface-variant">視覺化調整漫畫框架。內建多款教學風格模板，一鍵自動排版。</p>
+<div class="mt-8 grid grid-cols-2 gap-2 h-32">
+<div class="bg-white border border-slate-200 rounded-lg p-2 flex flex-col gap-2">
+<div class="bg-slate-50 flex-1 rounded"></div>
+<div class="h-2 w-3/4 bg-slate-100 rounded"></div>
+</div>
+<div class="bg-white border border-slate-200 rounded-lg p-2 flex flex-col gap-2">
+<div class="bg-slate-50 flex-1 rounded"></div>
+<div class="h-2 w-1/2 bg-slate-100 rounded"></div>
+</div>
+</div>
+</div>
+<!-- Step 4: Generation -->
+<div class="md:col-span-1 bg-secondary-container/10 p-8 rounded-2xl border border-secondary-container/20 group hover:border-secondary/40 transition-all flex flex-col items-center text-center">
+<div class="w-12 h-12 bg-secondary-container text-on-secondary-container rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<h3 class="text-xl font-bold mb-2">04 漫漫生成</h3>
+<p class="text-sm text-on-surface-variant">一鍵合成高品質圖像，自動添加對話氣泡與特效線。</p>
+</div>
+<!-- Step 5: Export -->
+<div class="md:col-span-2 bg-indigo-600 text-on-primary p-8 rounded-2xl group hover:shadow-xl transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">ios_share</span>
+</div>
+<h3 class="text-xl font-bold mb-2">05 匯出預覽</h3>
+<p class="text-indigo-100 text-sm">支援 PDF, PNG, 及互動式 Web 預覽格式。無縫對接主流 Lms 教學系統。</p>
+</div>
+<div class="mt-8 flex justify-end">
+<span class="material-symbols-outlined text-4xl opacity-50">cloud_done</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Preview Area Section -->
+<section id="showcase-grid" class="py-16 md:py-24 bg-white scroll-mt-20">
+<div class="max-w-7xl mx-auto px-5 sm:px-6">
+<div class="mb-12 max-w-2xl">
+<p class="text-xs font-extrabold tracking-[0.14em] text-primary uppercase">作品展示</p>
+<h2 class="text-4xl font-bold font-headline mt-3">靈感實驗室</h2>
+<p class="text-on-surface-variant text-lg mt-4">先翻閱多頁的主題知識讀本，再看看一頁就能讀完的趣味探索。</p>
+</div>
+<section class="showcase-knowledge-library" aria-labelledby="knowledge-title">
+<div class="showcase-collection-heading">
+<span class="showcase-collection-icon" aria-hidden="true"><span class="material-symbols-outlined">auto_stories</span></span>
+<div><h3 id="knowledge-title" class="showcase-collection-title">主題知識</h3><p class="showcase-collection-description">一本一個主題，點選封面後逐頁翻閱。</p></div>
+</div>
+<div id="knowledge-books" class="showcase-book-shelf" aria-live="polite"></div>
+</section>
+<section class="showcase-fun-collection" aria-labelledby="fun-title">
+<div class="showcase-collection-heading">
+<span class="showcase-collection-icon showcase-collection-icon--light" aria-hidden="true"><span class="material-symbols-outlined">explore</span></span>
+<div><h3 id="fun-title" class="showcase-collection-title">趣味探索</h3><p class="showcase-collection-description">每個作品只有一頁，適合快速瀏覽。</p></div>
+</div>
+<div id="fun-gallery" class="showcase-exploration-grid" aria-live="polite"></div>
+</section>
+</div>
+</section><!-- CTA Section -->
+<section class="py-24 relative overflow-hidden bg-primary">
+<div class="absolute inset-0 opacity-10">
+<div class="absolute inset-0" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 20px 20px;"></div>
+</div>
+<div class="max-w-4xl mx-auto px-6 text-center relative z-10 space-y-10">
+<h2 class="text-4xl md:text-5xl font-extrabold text-white leading-tight">讓教學變得和漫畫一樣吸引人</h2>
+<p class="text-xl text-indigo-100 opacity-90">現在註冊，享有 30 天完整 AI 創作功能免費試用。</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-white text-primary px-10 py-5 rounded-2xl font-bold text-xl shadow-2xl hover:bg-indigo-50 transition-all active:scale-95">
+                        立即開始創作
+                    </button>
+<button class="bg-transparent border-2 border-white/30 text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-white/10 transition-all">
+                        聯絡教育方案
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 mt-auto bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-6 flex flex-col items-center gap-8 text-center">
+<div class="flex flex-col items-center gap-2">
+<span class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100 font-headline">漫教工坊 ComicEdu Studio</span>
+<p class="text-slate-400 dark:text-slate-600 text-sm max-w-md">致力於透過 AI 技術翻轉教育體驗，讓每一堂課都能成為一段奇妙的視覺旅程。</p>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-slate-900 dark:hover:text-slate-100 transition-all font-['Manrope'] text-xs" href="#">使用條款</a>
+<a class="text-slate-500 hover:text-slate-900 dark:hover:text-slate-100 transition-all font-['Manrope'] text-xs" href="#">隱私政策</a>
+<a class="text-slate-500 hover:text-slate-900 dark:hover:text-slate-100 transition-all font-['Manrope'] text-xs" href="#">聯絡支援</a>
+</div>
+<div class="text-slate-400 dark:text-slate-600 font-['Manrope'] text-xs">
+                © 2026 ComicEdu Studio 漫教工坊. 版權所有.
+            </div>
+</div>
+</footer>
+<div id="showcase-modal" class="showcase-modal" role="dialog" aria-modal="true" aria-labelledby="showcase-modal-title" hidden>
+<div class="showcase-modal__backdrop" data-showcase-close></div>
+<div class="showcase-modal__panel" role="document">
+<header class="showcase-modal__header">
+<div class="min-w-0"><div class="flex items-center gap-3 text-xs text-indigo-200 font-bold"><span id="showcase-modal-category"></span><span id="showcase-modal-counter" class="tabular-nums"></span></div><h2 id="showcase-modal-title" class="text-lg sm:text-xl font-bold text-white truncate mt-1"></h2></div>
+<button id="showcase-modal-close" class="showcase-modal__close" type="button" aria-label="關閉作品預覽"><span class="material-symbols-outlined">close</span></button>
+</header>
+<div class="showcase-modal__viewer">
+<button id="showcase-previous" class="showcase-modal__nav showcase-modal__nav--previous" type="button" aria-label="上一個作品"><span class="material-symbols-outlined">arrow_back_ios_new</span></button>
+<div id="showcase-modal-media" class="showcase-modal__media"></div>
+<button id="showcase-next" class="showcase-modal__nav showcase-modal__nav--next" type="button" aria-label="下一個作品"><span class="material-symbols-outlined">arrow_forward_ios</span></button>
+</div>
+<footer class="showcase-modal__footer"><p id="showcase-modal-description" class="text-sm text-slate-300 leading-relaxed"></p><div class="flex items-center gap-4"><span id="showcase-page-counter" class="showcase-page-counter" hidden></span><span class="text-xs text-slate-500 whitespace-nowrap">← → 切換 · Esc 關閉</span></div></footer>
+</div>
+</div>
+<!-- FAB (Suppressed based on rules for main landing page, but providing common action if needed on interaction) -->
+<div class="fixed bottom-8 right-8 z-40 hidden md:block">
+<button class="bg-secondary-container text-on-secondary-container w-14 h-14 rounded-full shadow-xl flex items-center justify-center hover:scale-110 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">help</span>
+</button>
+</div>
+<script src="./js/config.js?v=8"></script>
+<script src="./js/portal.js?v=10"></script>
+</body></html>
+

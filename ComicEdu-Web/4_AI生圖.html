@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-Hant-TW"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>漫教工坊 ComicEdu Studio - 漫畫生成</title>
+<script src="./vendor/tailwindcss.js"></script>
+<link href="./vendor/material-symbols.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/global.css">
+    <script src="./js/tailwind-config.js"></script>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/80 backdrop-blur-md border-b border-slate-200/50 shadow-sm flex justify-between items-center h-16 px-6">
+<div class="flex items-center gap-4">
+<span class="text-xl font-bold tracking-tight text-slate-900">漫教工坊 ComicEdu Studio</span>
+</div>
+<nav class="hidden md:flex items-center gap-8 font-semibold text-sm">
+<a class="text-slate-600 hover:text-indigo-500 transition-colors" href="#">教學文件</a>
+<a class="text-slate-600 hover:text-indigo-500 transition-colors" href="#">範例展示</a>
+<a class="text-slate-600 hover:text-indigo-500 transition-colors" href="#">定價方案</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant hover:bg-surface-container-high p-2 rounded-full transition-colors">notifications</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:bg-surface-container-high p-2 rounded-full transition-colors">settings</button>
+<div class="h-8 w-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container text-xs font-bold ring-2 ring-primary/20">
+<img alt="使用者頭像" class="w-full h-full rounded-full" data-alt="User profile avatar icon" src="./assets/ui-image-04.jpg"/>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary px-4 py-2 rounded-md font-semibold text-sm transition-all active:scale-95">開始創作</button>
+</div>
+</header>
+<div class="flex flex-1 pt-16 h-screen overflow-hidden">
+<!-- SideNavBar - Workflow Progress -->
+<aside class="w-64 flex flex-col border-r border-slate-200 bg-slate-50 py-4 h-full">
+<div class="px-6 mb-8">
+<div class="flex items-center gap-3 mb-1">
+<span class="material-symbols-outlined text-primary text-xl" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+<span class="text-sm font-bold text-slate-900">創作進度</span>
+</div>
+<p class="text-xs text-slate-500">第 4 步：漫畫生成</p>
+</div>
+<nav class="flex-1 space-y-1">
+<div class="px-3">
+<a class="flex items-center gap-3 px-3 py-3 rounded-xl text-slate-500 hover:bg-slate-100 transition-all group" href="#">
+<span class="material-symbols-outlined">edit_note</span>
+<span class="text-sm font-medium">劇本設計</span>
+</a>
+</div>
+<div class="px-3">
+<a class="flex items-center gap-3 px-3 py-3 rounded-xl text-slate-500 hover:bg-slate-100 transition-all group" href="#">
+<span class="material-symbols-outlined">face</span>
+<span class="text-sm font-medium">角色設定</span>
+</a>
+</div>
+<div class="px-3">
+<a class="flex items-center gap-3 px-3 py-3 rounded-xl text-slate-500 hover:bg-slate-100 transition-all group" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-sm font-medium">分鏡佈局</span>
+</a>
+</div>
+<!-- Active Tab: 漫畫生成 -->
+<div class="px-3">
+<a class="flex items-center gap-3 px-3 py-3 rounded-xl bg-indigo-50 text-indigo-700 font-bold border-r-4 border-indigo-600 transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="text-sm">漫畫生成</span>
+</a>
+</div>
+<div class="px-3">
+<a class="flex items-center gap-3 px-3 py-3 rounded-xl text-slate-500 hover:bg-slate-100 transition-all group" href="#">
+<span class="material-symbols-outlined">ios_share</span>
+<span class="text-sm font-medium">導出預覽</span>
+</a>
+</div>
+</nav>
+<div class="px-4 mt-auto space-y-2">
+<button class="w-full flex items-center justify-center gap-2 py-3 bg-secondary-container text-on-secondary-container rounded-xl font-bold text-sm shadow-sm hover:opacity-90 transition-all active:scale-95">
+<span class="material-symbols-outlined">lightbulb</span>
+獲取靈感
+</button>
+<div class="pt-4 border-t border-slate-200">
+<a class="flex items-center gap-3 px-3 py-2 text-slate-500 hover:text-slate-900 text-sm transition-colors" href="#">
+<span class="material-symbols-outlined">help</span>
+<span>幫助中心</span>
+</a>
+<button class="w-full flex items-center gap-3 px-3 py-2 text-slate-500 hover:text-slate-900 text-sm transition-colors">
+<span class="material-symbols-outlined">dark_mode</span>
+<span>切換主題</span>
+</button>
+</div>
+</div>
+</aside>
+<!-- Main Workspace -->
+<main class="flex-1 bg-surface-container-low overflow-y-auto p-8">
+<div class="max-w-6xl mx-auto">
+<header class="mb-8 flex justify-between items-end">
+<div>
+<h2 class="text-2xl font-extrabold text-on-surface tracking-tight mb-2">生成漫畫畫布</h2>
+<p class="text-on-surface-variant text-sm">正在根據分鏡腳本生成高品質漫畫圖像。您可以對個別分鏡進行微調。</p>
+</div>
+<div class="flex gap-3">
+<button class="px-6 py-2.5 bg-surface-container-highest text-on-surface rounded-md font-semibold text-sm flex items-center gap-2 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">view_quilt</span>
+更換佈局
+</button>
+<button class="px-6 py-2.5 bg-primary text-on-primary rounded-md font-semibold text-sm flex items-center gap-2 shadow-lg shadow-primary/20 hover:bg-primary-container transition-all active:scale-95">
+<span class="material-symbols-outlined">rocket_launch</span>
+全部重新生成
+</button>
+</div>
+</header>
+<!-- Comic Canvas Grid (Dynamic Rendering) -->
+<div class="grid grid-cols-12 gap-6 pb-20">
+    <!-- Page Navigation Bar will be injected here for multi-page -->
+    <!-- Status Banner will be injected here by JavaScript -->
+    <!-- Progress Overview will be injected here by JavaScript -->
+    <!-- Panel Cards will be dynamically rendered here -->
+</div>
+</main>
+<!-- Completion-only editing hint -->
+<aside id="generation-complete-hint" class="hidden w-80 bg-slate-50 border-l border-slate-200 p-4 h-full">
+<div class="bg-indigo-50/50 p-4 rounded-xl border border-indigo-100">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-indigo-600 text-lg">info</span>
+<span class="text-sm font-bold text-indigo-900">提示</span>
+</div>
+<p class="text-xs text-indigo-800">漫畫生成完成後，點擊任一格分鏡即可查看並編輯提示詞，然後單獨重新生成該格。即使不修改提示詞，也會使用不同種子產生新圖片。</p>
+</div>
+</aside>
+</div>
+<!-- Footer (Embedded in main layout context) -->
+<footer class="w-full py-8 mt-auto bg-slate-50 border-t border-slate-200 flex flex-col items-center gap-4 text-center z-40">
+<p class="text-xs text-slate-400 font-['Manrope']">© 2026 ComicEdu Studio 漫教工坊. 版權所有.</p>
+<div class="flex gap-6 text-xs text-slate-500 font-['Manrope']">
+<a class="hover:text-slate-900 transition-colors" href="#">使用條款</a>
+<a class="hover:text-slate-900 transition-colors" href="#">隱私政策</a>
+<a class="hover:text-slate-900 transition-colors" href="#">聯絡支援</a>
+</div>
+</footer>
+<script src="./js/config.js?v=8"></script>
+<script src="./js/step4_generation.js?v=9"></script>
+</body></html>

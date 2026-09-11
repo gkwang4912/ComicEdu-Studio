@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="light" lang="zh-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>漫教工坊 - 我的專案</title>
+    <script src="./vendor/tailwindcss.js"></script>
+<link href="./vendor/material-symbols.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/global.css" />
+    <script src="./js/tailwind-config.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-body min-h-screen">
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
+        <div class="max-w-7xl mx-auto h-16 px-6 flex items-center justify-between">
+            <a href="Portal.html" class="font-headline text-xl font-extrabold tracking-tight">漫教工坊 ComicEdu Studio</a>
+            <nav class="flex items-center gap-6 text-sm font-semibold">
+                <a href="#my-projects" class="text-indigo-600">我的專案</a>
+                <a href="#resource-library" class="text-slate-600 hover:text-indigo-600">資源庫</a>
+            </nav>
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <div class="mb-10">
+            <p class="text-xs tracking-[0.18em] font-bold text-indigo-600 mb-3">PROJECTS</p>
+            <h1 class="text-4xl font-extrabold tracking-tight">選擇要繼續的漫畫</h1>
+            <p class="mt-3 text-slate-500">進行中的專案放在左側，完整生成後會自動移到資源庫。</p>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-10">
+            <section id="my-projects" class="scroll-mt-24">
+                <div class="flex items-center justify-between pb-4 border-b border-slate-200 mb-5">
+                    <h2 class="text-xl font-bold">我的專案</h2><span id="active-project-count" class="text-xs text-slate-400 tabular-nums"></span>
+                </div>
+                <div id="active-project-grid" class="grid sm:grid-cols-2 gap-4"></div>
+            </section>
+            <section id="resource-library" class="scroll-mt-24">
+                <div class="flex items-center justify-between pb-4 border-b border-slate-200 mb-5">
+                    <h2 class="text-xl font-bold">資源庫</h2><span id="completed-project-count" class="text-xs text-slate-400 tabular-nums"></span>
+                </div>
+                <div id="completed-project-grid" class="grid sm:grid-cols-2 gap-4"></div>
+            </section>
+        </div>
+        <section class="mt-12 pt-8 border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-5">
+            <div>
+                <h2 class="text-xl font-bold tracking-tight">開始另一份漫畫教材</h2>
+                <p class="mt-1.5 text-sm text-slate-500">建立新專案不會影響目前的進度與已完成作品。</p>
+            </div>
+            <button type="button" onclick="goToNewProject()" class="inline-flex items-center justify-center gap-2 px-5 py-3 bg-indigo-600 text-white font-bold rounded-xl hover:bg-indigo-700 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-indigo-200 transition">
+                <span class="material-symbols-outlined text-xl">add</span>
+                建立新專案
+            </button>
+        </section>
+    </main>
+    <script src="./js/config.js?v=7"></script>
+    <script src="./js/portal.js?v=5"></script>
+</body>
+</html>

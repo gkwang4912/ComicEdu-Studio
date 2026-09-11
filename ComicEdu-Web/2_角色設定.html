@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-TW">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>漫教工坊 ComicEdu Studio - 角色設定</title>
+    <script src="./vendor/tailwindcss.js"></script>
+<link href="./vendor/material-symbols.css" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="./css/global.css">
+    <script src="./js/tailwind-config.js"></script>
+</head>
+
+<body class="bg-background font-body text-on-background min-h-screen flex flex-col">
+    <!-- TopAppBar -->
+    <header
+        class="bg-[#f8f9fa] dark:bg-slate-900 border-b border-slate-200/60 dark:border-slate-800/60 flex justify-between items-center w-full px-6 h-16 fixed top-0 z-50">
+        <div class="flex items-center gap-8">
+            <div
+                class="text-xl font-bold bg-gradient-to-r from-[#4343d5] to-[#5d5fef] bg-clip-text text-transparent font-headline">
+                漫教工坊 ComicEdu Studio</div>
+            <nav class="hidden md:flex items-center gap-6 text-sm font-semibold">
+                <a class="text-[#4343d5] dark:text-[#5d5fef] border-b-2 border-[#4343d5] pb-1" href="#">我的專案</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#4343d5] transition-colors" href="#">資源庫</a>
+            </nav>
+        </div>
+        <div class="flex items-center gap-4">
+            <button
+                class="bg-primary-container text-on-primary-container px-4 py-2 rounded-xl text-sm font-bold flex items-center gap-2 hover:opacity-90 active:scale-[0.98] transition-all">
+                <span class="material-symbols-outlined text-sm">add</span>建立新教材
+            </button>
+            <div class="flex items-center gap-2">
+                <button
+                    class="p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors">
+                    <span class="material-symbols-outlined">notifications</span>
+                </button>
+                <button
+                    class="p-2 text-slate-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-full transition-colors">
+                    <span class="material-symbols-outlined">help</span>
+                </button>
+            </div>
+            <div class="h-8 w-8 rounded-full bg-surface-container overflow-hidden">
+                <img alt="教師個人頭像" data-alt="Portrait of a smiling professional teacher"
+                    src="./assets/ui-image-08.jpg" />
+            </div>
+        </div>
+    </header>
+    <div class="flex flex-1 pt-16 h-screen overflow-hidden">
+        <!-- SideNavBar -->
+        <aside
+            class="bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl border-r tonal-layering bg-slate-50 dark:bg-slate-900/50 shadow-[4px_0_24px_rgba(0,0,0,0.02)] fixed left-0 top-16 bottom-0 flex flex-col p-4 z-40 w-64">
+            <div class="mb-8 px-2">
+                <div
+                    class="flex items-center gap-3 p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/20">
+                    <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                        <span class="material-symbols-outlined">auto_stories</span>
+                    </div>
+                    <div>
+                        <div class="text-sm font-bold truncate">環境教育與永續發展</div>
+                        <div class="text-[10px] text-slate-500">當前專案</div>
+                    </div>
+                </div>
+            </div>
+            <nav class="flex-1 space-y-2">
+                <div class="flex items-center gap-3 text-slate-400 px-4 py-3 rounded-lg opacity-80 cursor-default">
+                    <span class="material-symbols-outlined"
+                        style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    <span class="font-medium">劇本構思</span>
+                </div>
+                <div
+                    class="flex items-center gap-3 bg-[#5d5fef]/10 text-[#4343d5] dark:text-[#5d5fef] rounded-lg px-4 py-3 font-bold translate-x-1 transition-all">
+                    <span class="material-symbols-outlined">face</span>
+                    <span>角色設定</span>
+                </div>
+                <div
+                    class="flex items-center gap-3 text-slate-500 dark:text-slate-400 px-4 py-3 hover:bg-slate-100 dark:hover:bg-slate-800/50 rounded-lg transition-all hover:translate-x-1">
+                    <span class="material-symbols-outlined">dashboard_customize</span>
+                    <span>分鏡配置</span>
+                </div>
+                <div
+                    class="flex items-center gap-3 text-slate-500 dark:text-slate-400 px-4 py-3 hover:bg-slate-100 dark:hover:bg-slate-800/50 rounded-lg transition-all hover:translate-x-1">
+                    <span class="material-symbols-outlined">auto_awesome</span>
+                    <span>AI 生成</span>
+                </div>
+                <div
+                    class="flex items-center gap-3 text-slate-500 dark:text-slate-400 px-4 py-3 hover:bg-slate-100 dark:hover:bg-slate-800/50 rounded-lg transition-all hover:translate-x-1">
+                    <span class="material-symbols-outlined">ios_share</span>
+                    <span>匯出分享</span>
+                </div>
+            </nav>
+            <div class="mt-auto space-y-1">
+                <button
+                    class="w-full flex items-center gap-3 bg-secondary-container text-on-secondary-container px-4 py-3 rounded-xl font-bold mb-4 shadow-sm hover:translate-y-[-2px] transition-all">
+                    <span class="material-symbols-outlined">bolt</span>
+                    AI 靈感助手
+                </button>
+                <div class="flex items-center gap-3 text-slate-500 px-4 py-2 hover:bg-slate-100 rounded-lg text-sm">
+                    <span class="material-symbols-outlined">settings</span>
+                    <span>設定</span>
+                </div>
+                <div class="flex items-center gap-3 text-slate-500 px-4 py-2 hover:bg-slate-100 rounded-lg text-sm">
+                    <span class="material-symbols-outlined">contact_support</span>
+                    <span>說明中心</span>
+                </div>
+            </div>
+        </aside>
+        <!-- Main Content Area -->
+        <main class="ml-64 flex-1 overflow-y-auto p-8 bg-surface-container-low">
+            <div class="max-w-6xl mx-auto flex gap-8">
+                <!-- Left Section: Character Selection -->
+                <div class="flex-1">
+                    <header class="mb-10">
+                        <div class="flex items-center gap-2 text-primary font-bold text-sm mb-2">
+                            <span class="material-symbols-outlined text-base">steps</span> STEP 02
+                        </div>
+                        <h1 class="text-3xl font-extrabold font-headline mb-3 text-on-surface">角色選擇</h1>
+                        <p class="text-on-surface-variant max-w-xl">選擇您的漫畫主角，AI 會根據腳本推薦最適合的人物形象，讓您的教育內容更具共鳴感。</p>
+                    </header>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 pointer-events-none opacity-60" id="characterGrid">
+                        <!-- 角色卡片將由 JavaScript 動態生成 -->
+                        <div class="col-span-full flex items-center justify-center py-12 text-slate-400">
+                            <div class="flex flex-col items-center gap-2">
+                                <span class="material-symbols-outlined text-4xl">hourglass_empty</span>
+                                <span class="font-semibold">加載角色中...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="character-selection-message" class="hidden" role="status" aria-live="polite"></div>
+                </div>
+                <aside class="w-80 hidden xl:block">
+                    <div
+                        class="bg-white/90 backdrop-blur-xl border border-primary/10 rounded-2xl p-6 shadow-sm sticky top-0">
+                        <div class="flex items-center gap-2 mb-6">
+                            <div
+                                class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+                                <span class="material-symbols-outlined text-sm"
+                                    style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+                            </div>
+                            <h2 class="font-bold text-lg font-headline">靈感小助手</h2>
+                        </div>
+
+                        <!-- Loading 狀態 -->
+                        <div id="ai-rec-loading" class="space-y-3 text-center py-8">
+                            <div class="w-8 h-8 border-4 border-primary/20 border-t-primary rounded-full animate-spin mx-auto"></div>
+                            <p class="text-xs text-slate-500">AI 正在分析劇本與角色...</p>
+                        </div>
+
+                        <!-- 推薦內容（載入後顯示） -->
+                        <div id="ai-rec-content" class="space-y-6 hidden">
+                            <div class="bg-surface-container-low rounded-xl p-4">
+                                <p id="ai-rec-summary" class="text-sm text-on-surface leading-relaxed"></p>
+                            </div>
+                            <div class="space-y-4">
+                                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider">推薦理由</h3>
+                                <ul id="ai-rec-reasons" class="space-y-3"></ul>
+                            </div>
+                            <div class="pt-6 border-t border-slate-100">
+                                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">搭配建議</h3>
+                                <p id="ai-rec-pairing" class="text-xs text-on-surface-variant leading-relaxed"></p>
+                            </div>
+                        </div>
+
+                        <!-- 錯誤狀態 -->
+                        <div id="ai-rec-error" class="hidden text-center py-6">
+                            <span class="material-symbols-outlined text-slate-300 text-3xl">sentiment_dissatisfied</span>
+                            <p id="ai-rec-error-msg" class="text-xs text-slate-400 mt-2"></p>
+                        </div>
+
+                        <button id="character-next-button" disabled
+                            class="w-full mt-10 py-3 bg-primary text-on-primary rounded-xl font-bold hover:opacity-90 active:scale-[0.98] transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed">
+                            下一步：分鏡配置
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </button>
+                    </div>
+                </aside>
+            </div>
+        </main>
+        <div id="character-recommendation-guard" class="fixed inset-0 z-50 bg-slate-950/25 backdrop-blur-[2px] items-center justify-center" style="display:none">
+            <div class="mx-6 max-w-sm rounded-2xl bg-white p-7 text-center shadow-2xl border border-indigo-100">
+                <div class="w-11 h-11 border-4 border-primary/20 border-t-primary rounded-full animate-spin mx-auto"></div>
+                <h2 class="mt-5 text-lg font-bold text-slate-900">AI 正在推薦角色</h2>
+                <p class="mt-2 text-sm leading-6 text-slate-500">正在讀取劇本與角色設定...</p>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Navigation Suppressed as per Task Logic -->
+    <script src="./js/config.js?v=8"></script>
+    <script src="./js/step2_character.js?v=3"></script>
+</body>
+
+</html>
