@@ -1,0 +1,14 @@
+openai
+PyMuPDF
+python-docx
+openpyxl
+xlrd
+numpy
+Pillow
+easyocr
+opencv-python
+torch
+torchvision
+tqdm
+shapely
+pyclipper

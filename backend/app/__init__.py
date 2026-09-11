@@ -1,0 +1,2 @@
+"""GK Comic backend package."""
+
