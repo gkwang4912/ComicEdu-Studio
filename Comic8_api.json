@@ -1,0 +1,1129 @@
+{
+  "38": {
+    "inputs": {
+      "f_string": "your_openai_api_here"
+    },
+    "class_type": "StringFormat",
+    "_meta": {
+      "title": "格式化文字"
+    }
+  },
+  "55": {
+    "inputs": {
+      "source": [
+        "213",
+        1
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "預覽任意"
+    }
+  },
+  "56": {
+    "inputs": {
+      "source": [
+        "213",
+        2
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "預覽任意"
+    }
+  },
+  "57": {
+    "inputs": {
+      "source": [
+        "213",
+        3
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "預覽任意"
+    }
+  },
+  "80": {
+    "inputs": {
+      "polygon": [
+        "86",
+        0
+      ]
+    },
+    "class_type": "bmad_PolygonBounds",
+    "_meta": {
+      "title": "Polygon.bounds"
+    }
+  },
+  "81": {
+    "inputs": {
+      "mask": [
+        "82",
+        0
+      ],
+      "bbox": [
+        "82",
+        1
+      ]
+    },
+    "class_type": "bmad_CropMaskByBBox",
+    "_meta": {
+      "title": "Crop Mask By BBox"
+    }
+  },
+  "82": {
+    "inputs": {
+      "approx_res": "1048576",
+      "pad": "64",
+      "polygon": [
+        "86",
+        0
+      ],
+      "image": [
+        "97",
+        0
+      ]
+    },
+    "class_type": "bmad_PolygonToResizedMask",
+    "_meta": {
+      "title": "Polygon To Resized Mask"
+    }
+  },
+  "85": {
+    "inputs": {
+      "image": [
+        "97",
+        0
+      ],
+      "bbox": [
+        "80",
+        0
+      ]
+    },
+    "class_type": "bmad_CropImageByBBox",
+    "_meta": {
+      "title": "Crop Image By BBox"
+    }
+  },
+  "86": {
+    "inputs": {
+      "margin": 32,
+      "reading_dir": false,
+      "layout": [
+        "214",
+        0
+      ],
+      "canvas": [
+        "91",
+        0
+      ]
+    },
+    "class_type": "bmad_BuildLayoutPanels",
+    "_meta": {
+      "title": "Build Layout Panels"
+    }
+  },
+  "91": {
+    "inputs": {
+      "width": [
+        "94",
+        0
+      ],
+      "height": [
+        "93",
+        0
+      ]
+    },
+    "class_type": "bmad_CanvasPanel",
+    "_meta": {
+      "title": "Canvas Panel"
+    }
+  },
+  "93": {
+    "inputs": {
+      "value": 1086
+    },
+    "class_type": "PrimitiveInt",
+    "_meta": {
+      "title": "整數"
+    }
+  },
+  "94": {
+    "inputs": {
+      "value": 768
+    },
+    "class_type": "PrimitiveInt",
+    "_meta": {
+      "title": "整數"
+    }
+  },
+  "97": {
+    "inputs": {
+      "width": [
+        "94",
+        0
+      ],
+      "height": [
+        "93",
+        0
+      ],
+      "batch_size": 1,
+      "color": 0
+    },
+    "class_type": "EmptyImage",
+    "_meta": {
+      "title": "空白圖片"
+    }
+  },
+  "99": {
+    "inputs": {
+      "mask": [
+        "81",
+        0
+      ]
+    },
+    "class_type": "MaskPreview",
+    "_meta": {
+      "title": "MaskPreview"
+    }
+  },
+  "100": {
+    "inputs": {
+      "unet_name": "Qwen-Image-Edit-2511-FP8_e4m3fn.safetensors",
+      "weight_dtype": "default"
+    },
+    "class_type": "UNETLoader",
+    "_meta": {
+      "title": "載入擴散模型"
+    }
+  },
+  "101": {
+    "inputs": {
+      "clip_name": "qwen_2.5_vl_7b_fp8_scaled.safetensors",
+      "type": "qwen_image",
+      "device": "default"
+    },
+    "class_type": "CLIPLoader",
+    "_meta": {
+      "title": "載入 CLIP"
+    }
+  },
+  "103": {
+    "inputs": {
+      "vae_name": "qwen_image_vae.safetensors"
+    },
+    "class_type": "VAELoader",
+    "_meta": {
+      "title": "載入 VAE"
+    }
+  },
+  "104": {
+    "inputs": {
+      "lora_name": "Qwen-Image-Edit-2511-Lightning-4steps-V1.0-fp32.safetensors",
+      "strength_model": 1.02,
+      "model": [
+        "100",
+        0
+      ]
+    },
+    "class_type": "LoraLoaderModelOnly",
+    "_meta": {
+      "title": "LoraLoaderModelOnly"
+    }
+  },
+  "105": {
+    "inputs": {
+      "prompt": [
+        "266",
+        1
+      ],
+      "clip": [
+        "101",
+        0
+      ],
+      "vae": [
+        "103",
+        0
+      ],
+      "image1": [
+        "266",
+        2
+      ],
+      "image2": [
+        "218",
+        0
+      ]
+    },
+    "class_type": "TextEncodeQwenImageEditPlus",
+    "_meta": {
+      "title": "TextEncodeQwenImageEditPlus"
+    }
+  },
+  "106": {
+    "inputs": {
+      "prompt": [
+        "266",
+        0
+      ],
+      "clip": [
+        "101",
+        0
+      ],
+      "vae": [
+        "103",
+        0
+      ],
+      "image1": [
+        "266",
+        2
+      ],
+      "image2": [
+        "218",
+        0
+      ]
+    },
+    "class_type": "TextEncodeQwenImageEditPlus",
+    "_meta": {
+      "title": "TextEncodeQwenImageEditPlus"
+    }
+  },
+  "110": {
+    "inputs": {
+      "upscale_method": "lanczos",
+      "megapixels": 1.6,
+      "resolution_steps": 1,
+      "image": [
+        "266",
+        3
+      ]
+    },
+    "class_type": "ImageScaleToTotalPixels",
+    "_meta": {
+      "title": "將影像縮放至總像素數"
+    }
+  },
+  "115": {
+    "inputs": {
+      "pixels": [
+        "110",
+        0
+      ],
+      "vae": [
+        "103",
+        0
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE 編碼"
+    }
+  },
+  "117": {
+    "inputs": {
+      "dilation": 8,
+      "mask": [
+        "266",
+        4
+      ]
+    },
+    "class_type": "ImpactDilateMask",
+    "_meta": {
+      "title": "Dilate Mask"
+    }
+  },
+  "118": {
+    "inputs": {
+      "samples": [
+        "115",
+        0
+      ],
+      "mask": [
+        "117",
+        0
+      ]
+    },
+    "class_type": "SetLatentNoiseMask",
+    "_meta": {
+      "title": "設定 latent 雜訊遮罩"
+    }
+  },
+  "120": {
+    "inputs": {
+      "shift": 3.1,
+      "model": [
+        "104",
+        0
+      ]
+    },
+    "class_type": "ModelSamplingAuraFlow",
+    "_meta": {
+      "title": "模型取樣 AuraFlow"
+    }
+  },
+  "127": {
+    "inputs": {
+      "seed": 286613980076296,
+      "steps": 8,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1,
+      "model": [
+        "301",
+        0
+      ],
+      "positive": [
+        "106",
+        0
+      ],
+      "negative": [
+        "105",
+        0
+      ],
+      "latent_image": [
+        "118",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "128": {
+    "inputs": {
+      "strength": 1,
+      "pre_cfg": false,
+      "model": [
+        "120",
+        0
+      ]
+    },
+    "class_type": "CFGNorm",
+    "_meta": {
+      "title": "CFG 正規化"
+    }
+  },
+  "129": {
+    "inputs": {
+      "samples": [
+        "127",
+        0
+      ],
+      "vae": [
+        "103",
+        0
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE 解碼"
+    }
+  },
+  "166": {
+    "inputs": {
+      "source": [
+        "209",
+        0
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "預覽任意"
+    }
+  },
+  "167": {
+    "inputs": {
+      "source": [
+        "209",
+        3
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "預覽任意"
+    }
+  },
+  "173": {
+    "inputs": {
+      "f_string": "\"C:\\Users\\GK\\Desktop\\高詹遠矚\\Main\\Structure\\ComfyUI\\file\\characters\\characters.json\""
+    },
+    "class_type": "StringFormat",
+    "_meta": {
+      "title": "格式化文字"
+    }
+  },
+  "175": {
+    "inputs": {
+      "f_string": "\"C:\\Users\\GK\\Desktop\\高詹遠矚\\Main\\Structure\\ComfyUI\\file\\layouts\\layouts.json\""
+    },
+    "class_type": "StringFormat",
+    "_meta": {
+      "title": "格式化文字"
+    }
+  },
+  "186": {
+    "inputs": {
+      "f_string": "\"C:\\Users\\GK\\Desktop\\高詹遠矚\\Main\\Structure\\ComfyUI\\file\\characters\\characters\""
+    },
+    "class_type": "StringFormat",
+    "_meta": {
+      "title": "格式化文字"
+    }
+  },
+  "188": {
+    "inputs": {
+      "f_string": "\"C:\\Users\\GK\\Desktop\\高詹遠矚\\Main\\Structure\\ComfyUI\\file\\layouts\\layouts\""
+    },
+    "class_type": "StringFormat",
+    "_meta": {
+      "title": "格式化文字"
+    }
+  },
+  "201": {
+    "inputs": {
+      "api_key": [
+        "38",
+        0
+      ],
+      "model": "gpt-4o",
+      "temperature": 0.7,
+      "max_output_tokens": 10000,
+      "output_mode": "json_schema",
+      "output_schema": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"prompts\": {\n      \"type\": \"array\",\n      \"minItems\": 4,\n      \"maxItems\": 4,\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"序號\": {\n            \"type\": \"integer\",\n            \"minimum\": 1,\n            \"maximum\": 4\n          },\n          \"提示詞內容\": {\n            \"type\": \"object\",\n            \"properties\": {\n              \"描述\": {\n                \"type\": \"string\",\n                \"minLength\": 1\n              },\n              \"負向提示詞\": {\n                \"type\": \"string\"\n              }\n            },\n            \"required\": [\n              \"描述\",\n              \"負向提示詞\"\n            ],\n            \"additionalProperties\": false\n          },\n          \"文字內容\": {\n            \"type\": \"string\"\n          },\n          \"人物數量\": {\n            \"type\": \"integer\",\n            \"minimum\": 0,\n            \"maximum\": 2\n          },\n          \"人物陣列\": {\n            \"type\": \"array\",\n            \"items\": {\n              \"type\": \"string\",\n              \"enum\": [\n                \"人物1\",\n                \"人物2\"\n              ]\n            },\n            \"maxItems\": 2\n          }\n        },\n        \"required\": [\n          \"序號\",\n          \"提示詞內容\",\n          \"文字內容\",\n          \"人物數量\",\n          \"人物陣列\"\n        ],\n        \"additionalProperties\": false\n      }\n    }\n  },\n  \"required\": [\n    \"prompts\"\n  ],\n  \"additionalProperties\": false\n}",
+      "request_nonce": 0,
+      "prompt": [
+        "263",
+        0
+      ]
+    },
+    "class_type": "OpenAIResponsesAPI",
+    "_meta": {
+      "title": "GK Shared - OpenAI Responses API"
+    }
+  },
+  "202": {
+    "inputs": {
+      "field_name": "",
+      "json_text": [
+        "201",
+        0
+      ]
+    },
+    "class_type": "JSONArraySplitter",
+    "_meta": {
+      "title": "GK Shared - JSON Array Splitter"
+    }
+  },
+  "203": {
+    "inputs": {
+      "input": [
+        "202",
+        0
+      ]
+    },
+    "class_type": "JSONListInspector",
+    "_meta": {
+      "title": "GK Shared - JSON List Inspector"
+    }
+  },
+  "208": {
+    "inputs": {
+      "characters_json_path": [
+        "173",
+        0
+      ],
+      "system_prompt": "你是「ComicEdu AI 靈感小助手」，專門協助教師選擇最適合教育漫畫的角色組合。\n你的任務是分析完整一頁漫畫劇本內容與可用角色的特性，推薦最適合整頁漫畫共用的角色組合，並給出清楚的推薦理由。\n請用繁體中文（台灣用語）回答。\n你必須且只能輸出合法的 JSON，不要加上 Markdown 語法或任何解釋。",
+      "user_prompt_template": "以下是目前完整一頁的漫畫劇本（JSON 格式）：\n{script}\n\n以下是所有可選角色的資料（JSON 格式）：\n{characters}\n\n請根據整頁劇本的主題、場景、知識內容與情緒，推薦最適合整頁漫畫共用的角色組合（主角與配角），並說明理由。\n你必須從候選角色中恰好選擇 2 名不同角色。\n\n規則：\n1. recommended_ids 必須包含且只能包含 2 個不同的角色 ID。\n2. 第 1 名作為主要角色，第 2 名作為搭配角色。\n3. 即使本頁劇本主要只有一名角色，也必須選出第二名最適合作為輔助、互動或視覺一致性參考的角色。\n4. 不得只推薦 1 名角色。\n5. 不得推薦超過 2 名角色。\n6. reasons 必須分別對這 2 名角色提供推薦理由。\n\n角色選擇必須以整頁四格的一致性為優先，不要針對單一分鏡各自選擇不同角色。",
+      "script_json": [
+        "202",
+        0
+      ]
+    },
+    "class_type": "CharacterRecommendationPromptBuilder",
+    "_meta": {
+      "title": "GK Stage 4 - Character Recommendation Prompt Builder"
+    }
+  },
+  "209": {
+    "inputs": {
+      "result_json": [
+        "210",
+        0
+      ],
+      "characters_json": [
+        "208",
+        3
+      ]
+    },
+    "class_type": "CharacterRecommendationParser",
+    "_meta": {
+      "title": "GK Stage 4 - Character Recommendation Parser"
+    }
+  },
+  "210": {
+    "inputs": {
+      "api_key": [
+        "38",
+        0
+      ],
+      "model": "gpt-4o",
+      "temperature": 0.7,
+      "max_output_tokens": 10000,
+      "output_mode": "json_schema",
+      "output_schema": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"summary\": {\n      \"type\": \"string\"\n    },\n    \"recommended_ids\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"integer\"\n      },\n      \"minItems\": 2,\n      \"maxItems\": 2\n    },\n    \"reasons\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"character_id\": {\n            \"type\": \"integer\"\n          },\n          \"reason\": {\n            \"type\": \"string\"\n          }\n        },\n        \"required\": [\n          \"character_id\",\n          \"reason\"\n        ],\n        \"additionalProperties\": false\n      },\n      \"minItems\": 2,\n      \"maxItems\": 2\n    },\n    \"pairing_tip\": {\n      \"type\": \"string\"\n    }\n  },\n  \"required\": [\n    \"summary\",\n    \"recommended_ids\",\n    \"reasons\",\n    \"pairing_tip\"\n  ],\n  \"additionalProperties\": false\n}",
+      "request_nonce": 0,
+      "prompt": [
+        "208",
+        0
+      ]
+    },
+    "class_type": "OpenAIResponsesAPI",
+    "_meta": {
+      "title": "GK Shared - OpenAI Responses API"
+    }
+  },
+  "211": {
+    "inputs": {
+      "api_key": [
+        "38",
+        0
+      ],
+      "model": "gpt-4o",
+      "temperature": 0.7,
+      "max_output_tokens": 10000,
+      "output_mode": "json_schema",
+      "output_schema": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"selected_layouts\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"layout_name\": {\n            \"type\": \"string\"\n          },\n          \"reason\": {\n            \"type\": \"string\"\n          }\n        },\n        \"required\": [\n          \"layout_name\",\n          \"reason\"\n        ],\n        \"additionalProperties\": false\n      }\n    }\n  },\n  \"required\": [\n    \"selected_layouts\"\n  ],\n  \"additionalProperties\": false\n}",
+      "request_nonce": 0,
+      "prompt": [
+        "212",
+        0
+      ]
+    },
+    "class_type": "OpenAIResponsesAPI",
+    "_meta": {
+      "title": "GK Shared - OpenAI Responses API"
+    }
+  },
+  "212": {
+    "inputs": {
+      "layouts_json_path": [
+        "175",
+        0
+      ],
+      "expected_count": 3,
+      "system_prompt": "你是一位專業的漫畫整頁排版專家。\n\n你的任務是分析一整頁四格漫畫的完整劇本，同時考量第 1 格到第 4 格的知識重要程度、人物配置、資訊密度、動作複雜度、鏡頭需求以及四格之間的閱讀節奏，從提供的候選整頁 Layout 中，選出最適合這一整頁漫畫的版型。\n\n一個 layout_name 代表的是完整漫畫頁面的配置，不是單一分鏡的版面。\n\n你必須一次分析全部四格，不可針對每格各自選擇不同 Layout。\n\n只能從提供的候選版面中選擇，不得自行建立不存在的 layout_name 或 layout_id。\n\n請使用繁體中文（台灣用語）回答，並嚴格遵守指定的 Structured Output 格式。",
+      "user_prompt_template": "請根據以下完整四格漫畫劇本，挑選出最適合這一整頁漫畫的 {expected_count} 個整頁 Layout 候選。\n\n=== 完整四格漫畫劇本開始 ===\n{script}\n=== 完整四格漫畫劇本結束 ===\n\n以下是本頁漫畫統一使用的角色資料：\n\n=== 角色資料開始 ===\n{characters}\n=== 角色資料結束 ===\n\n以下是可以使用的候選整頁漫畫 Layout：\n\n=== 候選版面開始 ===\n{layouts}\n=== 候選版面結束 ===\n\n請依照以下原則判斷：\n\n1. 必須同時分析第 1、2、3、4 格，不可把四格拆開各自選版。\n2. 每一個 layout_name 都代表完整一頁漫畫的四格區域配置。\n3. 請按照漫畫劇本的第 1 格到第 4 格順序，對應候選 Layout 中各區域的閱讀順序與大小。\n4. 核心知識、重要轉折、主要視覺畫面、需要較長閱讀時間的分鏡，應優先配置到較大的 panel 區域。\n5. 包含多人、複雜動作、教學圖表、模型、示意圖、板書或較多資訊的分鏡，應配置到較大的 panel 區域。\n6. 短暫銜接、簡單動作或次要資訊的分鏡，可以配置到較小的 panel 區域。\n7. 必須整體考量四格之間的視覺節奏、閱讀順序與資訊權重，不能只因其中單一分鏡而決定整頁 Layout。\n8. Layout 必須能合理容納本頁指定角色，不得自行增加其他角色。\n9. 嚴格從候選版面中選擇，不得自行建立、修改或縮寫 layout_name。\n10. 請選出 {expected_count} 個不同的整頁 Layout 候選，並依推薦優先順序排列。\n\n請依照指定的 Structured Output 格式回傳結果。",
+      "script_json": [
+        "202",
+        0
+      ],
+      "recommended_characters_json": [
+        "209",
+        0
+      ]
+    },
+    "class_type": "LayoutRecommendationPromptBuilder",
+    "_meta": {
+      "title": "GK Stage 5 - Layout Recommendation Prompt Builder"
+    }
+  },
+  "213": {
+    "inputs": {
+      "expected_count": 3,
+      "result_json": [
+        "211",
+        0
+      ],
+      "layouts_json": [
+        "212",
+        5
+      ]
+    },
+    "class_type": "LayoutRecommendationParser",
+    "_meta": {
+      "title": "GK Stage 5 - Layout Recommendation Parser"
+    }
+  },
+  "214": {
+    "inputs": {
+      "layout_folder": [
+        "188",
+        0
+      ],
+      "layout_name": [
+        "213",
+        3
+      ]
+    },
+    "class_type": "PanelLayoutLoader",
+    "_meta": {
+      "title": "GK Stage 6 - Page Layout Loader"
+    }
+  },
+  "215": {
+    "inputs": {
+      "characters_json_path": [
+        "173",
+        0
+      ],
+      "character_root": [
+        "186",
+        0
+      ],
+      "padding": 12,
+      "character_choices": [
+        "209",
+        0
+      ]
+    },
+    "class_type": "CharacterReferenceMerger",
+    "_meta": {
+      "title": "GK Stage 7 - Character Reference Merger"
+    }
+  },
+  "216": {
+    "inputs": {
+      "mode": "random",
+      "swap_probability": 0.5,
+      "panel_count": 4,
+      "merged_image": [
+        "215",
+        0
+      ]
+    },
+    "class_type": "CharacterReferenceSideRandomizer",
+    "_meta": {
+      "title": "GK Stage 7 - Character Side Randomizer"
+    }
+  },
+  "218": {
+    "inputs": {
+      "width": 1024,
+      "height": 512,
+      "font_size": 72,
+      "font_path": "",
+      "margin": 64,
+      "line_spacing": 20,
+      "text_contents": [
+        "266",
+        5
+      ]
+    },
+    "class_type": "TextReferenceImageGenerator",
+    "_meta": {
+      "title": "GK Stage 7 - Text Reference Image"
+    }
+  },
+  "220": {
+    "inputs": {
+      "subject": "自然科學",
+      "grade_level": "小學2年級",
+      "max_material_characters": 100000,
+      "system_prompt": "你是一位專業的「教育內容分析師」與「教育漫畫企劃設計師」。\n\n你目前負責 GK Comic Stage 1：\n分析使用者提供的教材內容，提取具體且可教學的核心知識，並產生 3 個彼此明顯不同、適合轉化為教育漫畫的企劃方案。\n\n你目前只負責 Stage 1。\n\n你不負責：\n- 不撰寫完整故事分頁\n- 不撰寫四格漫畫腳本\n- 不決定角色造型\n- 不推薦漫畫版型\n- 不撰寫圖片生成提示詞\n- 不進行圖片生成\n\n\n==================================================\n【最高原則：知識密度優先】\n==================================================\n\n這是一個教育漫畫系統。\n\nStage 1 最重要的任務不是先想故事，\n而是先從教材中建立足夠完整、具體、可靠的「知識原料」。\n\n後續 Stage 2 與 Stage 3 都會依賴本階段輸出的知識內容。\n\n因此不得只輸出模糊的主題摘要。\n\n\n錯誤範例：\n\n- 介紹波的基本概念\n- 認識植物的特性\n- 了解核心素養\n- 探索光合作用\n- 認識慣性\n- 學習不同種類的波\n\n\n以上都太模糊。\n\n\n正確方向例如：\n\n- 波是能量傳遞的一種方式，介質中的粒子通常只在平衡位置附近振動\n- 橫波的振動方向與傳播方向垂直\n- 縱波的振動方向與傳播方向平行\n- 波速、頻率與波長的關係為 v=fλ\n- 光合作用需要光、水與二氧化碳，並產生養分與氧氣\n- 慣性是物體維持原有運動狀態的性質\n\n\n==================================================\n【教材分析規則】\n==================================================\n\nmaterial_analysis 中的 key_knowledge_points\n必須提取教材中真正值得教授的核心知識。\n\n原則：\n\n1. 原則上應整理 5～10 個核心知識點。\n2. 每一個知識點都必須具體、可教學。\n3. 優先保留：\n   - 定義\n   - 原理\n   - 分類\n   - 因果關係\n   - 重要事實\n   - 公式\n   - 比較關係\n   - 具體例子\n   - 實際應用\n4. 不得只寫章節名稱或主題名稱。\n5. 不得把同一知識換句話說後重複列出。\n6. 不得加入與教材內容矛盾的資訊。\n7. 若教材中存在容易混淆、抽象或常見誤解，\n   必須反映在 learning_difficulties 中。\n8. learning_difficulties 應具體指出「學生可能難在哪裡」，\n   不要只寫「內容較難理解」。\n\n\n==================================================\n【三個漫畫企劃規則】\n==================================================\n\n你必須提出 3 個彼此有實質差異的教育漫畫企劃。\n\n三個方案不能只是：\n- 換標題\n- 換角色名稱\n- 換場景名稱\n\n差異可以來自：\n\n- 故事切入方式\n- 敘事視角\n- 教學策略\n- 情境設定\n- 知識呈現方式\n- 問題解決方式\n- 戲劇衝突方式\n\n\n可使用但不限於：\n\n- 日常生活情境\n- 冒險／任務情境\n- 問題解決情境\n- 實驗探索情境\n- 擬人化概念情境\n- 角色互動情境\n\n\n==================================================\n【knowledge_context：最高重要性】\n==================================================\n\n每一個 plan 的 knowledge_context\n都是後續 Story Arc 與四格劇本的重要知識來源。\n\n因此 knowledge_context 不得只是企劃簡介。\n\nknowledge_context 應盡量控制在約 150～300 字，\n並且必須具體整理本企劃後續可能使用的核心知識。\n\n應依教材實際內容涵蓋適用的：\n\n- 核心定義\n- 關鍵原理\n- 分類\n- 因果關係\n- 重要事實\n- 公式\n- 比較\n- 具體實例\n- 實際應用\n\n不要求教材一定同時具有所有類型，\n但只要教材中存在，就應保留。\n\n禁止：\n\nknowledge_context：\n「介紹波的基本概念與相關應用。」\n\n這種內容資訊量不足。\n\n\n應改為類似：\n\n「波是能量傳遞的現象，介質本身不會隨波整體向前移動。依介質振動方向與傳播方向的關係，可分為橫波與縱波。橫波兩方向互相垂直，縱波則互相平行。波的重要參數包括振幅、波長與頻率，波速符合 v=fλ。聲波是常見的縱波實例……」\n\nknowledge_context 必須能讓後續 AI\n在不重新閱讀原始教材的情況下，\n仍能知道「應該教哪些具體知識」。\n\n\n==================================================\n【教學適齡規則】\n==================================================\n\n內容必須符合指定的 subject 與 grade_level。\n\n知識本身不可因為年級較低而改成錯誤資訊。\n\n如果概念較困難：\n\n應降低表達複雜度，\n而不是刪除概念的核心事實。\n\n\n==================================================\n【故事與知識平衡】\n==================================================\n\n漫畫企劃必須具有故事性，\n但故事必須服務知識。\n\n不要只把課本文字改成角色對話。\n\n好的教育漫畫企劃應讓：\n\n事件\n→ 現象\n→ 問題\n→ 知識\n→ 理解\n\n自然發生。\n\n\n==================================================\n【頁數規則】\n==================================================\n\nrecommended_page_count 代表 AI 建議的漫畫頁數。\n\n後續每頁固定製作為 4 格漫畫。\n\nrecommended_page_count 只需根據：\n\n- 教材知識量\n- 概念難度\n- 知識遞進需求\n- 故事完整性\n\n提出合理建議。\n\n此數值只是建議，\n後續使用者仍可能選擇其他頁數。\n\n\n==================================================\n【輸出規則】\n==================================================\n\n必須完全遵守系統提供的 Structured Output JSON Schema。\n\n不得新增 Schema 中不存在的欄位。\n\n不得自行新增 knowledgeList 等欄位。\n\n只能輸出合法 JSON。\n\n不要輸出 Markdown。\n不要輸出 JSON 以外的解釋。\n\n使用繁體中文（台灣用語）。",
+      "user_prompt_template": "請分析以下教材，並提出 3 個彼此明顯不同的教育漫畫企劃方案。\n\n【教材名稱】\n{material_name}\n\n【學科】\n{subject}\n\n【適用年級】\n{grade_level}\n\n【教材內容】\n{material_text}\n\n\n請先分析教材本身，再建立漫畫企劃。\n\n特別注意：\n\n1. key_knowledge_points 應整理教材中最重要的 5～10 個具體知識點。\n2. 知識點不可只寫「認識……」、「了解……」、「介紹……」等模糊目標。\n3. 優先保留教材中的定義、原理、分類、因果、事實、公式、比較、例子與應用。\n4. learning_difficulties 應指出學生真正可能產生的理解困難或混淆。\n5. 三個 plans 必須有實質不同的故事或教學切入方式。\n6. 每個 plan 的 knowledge_context 必須包含足夠完整的具體知識，供後續 Story Arc 使用，不能只有企劃摘要。\n7. knowledge_context 建議約 150～300 字。\n8. 所有內容都必須符合教材以及指定學科與年級。\n\n此階段不要撰寫：\n\n- 每頁劇情\n- 四格腳本\n- 角色設定\n- 分鏡\n- 漫畫版型\n- 圖片生成提示詞\n\n請完全依照指定 JSON Schema 回傳結果。",
+      "material_text": [
+        "227",
+        0
+      ],
+      "material_name": [
+        "227",
+        1
+      ]
+    },
+    "class_type": "MaterialAnalysisPromptBuilder",
+    "_meta": {
+      "title": "GK Stage 1 - Material Analysis Prompt Builder"
+    }
+  },
+  "221": {
+    "inputs": {
+      "api_key": [
+        "38",
+        0
+      ],
+      "model": "gpt-4o",
+      "temperature": 0.7,
+      "max_output_tokens": 10000,
+      "output_mode": "json_schema",
+      "output_schema": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"material_analysis\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"core_topic\": {\n          \"type\": \"string\"\n        },\n        \"key_knowledge_points\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"type\": \"string\"\n          }\n        },\n        \"learning_difficulties\": {\n          \"type\": \"array\",\n          \"items\": {\n            \"type\": \"string\"\n          }\n        }\n      },\n      \"required\": [\n        \"core_topic\",\n        \"key_knowledge_points\",\n        \"learning_difficulties\"\n      ],\n      \"additionalProperties\": false\n    },\n    \"plans\": {\n      \"type\": \"array\",\n      \"minItems\": 3,\n      \"maxItems\": 3,\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"plan_id\": {\n            \"type\": \"integer\"\n          },\n          \"title\": {\n            \"type\": \"string\"\n          },\n          \"topic\": {\n            \"type\": \"string\"\n          },\n          \"subject\": {\n            \"type\": \"string\"\n          },\n          \"grade_level\": {\n            \"type\": \"string\"\n          },\n          \"teaching_objective\": {\n            \"type\": \"string\"\n          },\n          \"story_style\": {\n            \"type\": \"string\"\n          },\n          \"knowledge_context\": {\n            \"type\": \"string\"\n          },\n          \"recommended_page_count\": {\n            \"type\": \"integer\",\n            \"minimum\": 1,\n            \"maximum\": 20\n          },\n          \"summary\": {\n            \"type\": \"string\"\n          }\n        },\n        \"required\": [\n          \"plan_id\",\n          \"title\",\n          \"topic\",\n          \"subject\",\n          \"grade_level\",\n          \"teaching_objective\",\n          \"story_style\",\n          \"knowledge_context\",\n          \"recommended_page_count\",\n          \"summary\"\n        ],\n        \"additionalProperties\": false\n      }\n    }\n  },\n  \"required\": [\n    \"material_analysis\",\n    \"plans\"\n  ],\n  \"additionalProperties\": false\n}",
+      "request_nonce": 0,
+      "prompt": [
+        "220",
+        0
+      ]
+    },
+    "class_type": "OpenAIResponsesAPI",
+    "_meta": {
+      "title": "GK Shared - OpenAI Responses API"
+    }
+  },
+  "225": {
+    "inputs": {
+      "source": [
+        "221",
+        0
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "預覽任意"
+    }
+  },
+  "227": {
+    "inputs": {
+      "material_file_path": "\"C:\\Users\\GK\\Downloads\\十二年國教課程綱要總綱.pdf\""
+    },
+    "class_type": "MaterialFileLoader",
+    "_meta": {
+      "title": "GK Stage 1 - Material File Loader"
+    }
+  },
+  "233": {
+    "inputs": {
+      "result_json": [
+        "221",
+        0
+      ]
+    },
+    "class_type": "MaterialAnalysisResultParser",
+    "_meta": {
+      "title": "GK Stage 1 - Material Analysis Result Parser"
+    }
+  },
+  "234": {
+    "inputs": {
+      "source": [
+        "233",
+        0
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "預覽任意"
+    }
+  },
+  "235": {
+    "inputs": {
+      "source": [
+        "233",
+        1
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "預覽任意"
+    }
+  },
+  "236": {
+    "inputs": {
+      "source": [
+        "233",
+        8
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "預覽任意"
+    }
+  },
+  "239": {
+    "inputs": {
+      "api_key": [
+        "38",
+        0
+      ],
+      "model": "gpt-4o",
+      "temperature": 0.7,
+      "max_output_tokens": 10000,
+      "output_mode": "json_schema",
+      "output_schema": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"story_arc\": {\n      \"type\": \"object\",\n      \"properties\": {\n        \"title\": {\n          \"type\": \"string\"\n        },\n        \"overall_theme\": {\n          \"type\": \"string\"\n        },\n        \"overall_learning_goal\": {\n          \"type\": \"string\"\n        },\n        \"story_summary\": {\n          \"type\": \"string\"\n        },\n        \"knowledge_progression\": {\n          \"type\": \"string\"\n        },\n        \"continuity_notes\": {\n          \"type\": \"string\"\n        }\n      },\n      \"required\": [\n        \"title\",\n        \"overall_theme\",\n        \"overall_learning_goal\",\n        \"story_summary\",\n        \"knowledge_progression\",\n        \"continuity_notes\"\n      ],\n      \"additionalProperties\": false\n    },\n    \"pages\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"page_number\": {\n            \"type\": \"integer\",\n            \"minimum\": 1\n          },\n          \"page_title\": {\n            \"type\": \"string\"\n          },\n          \"story_role\": {\n            \"type\": \"string\",\n            \"enum\": [\n              \"起\",\n              \"承\",\n              \"轉\",\n              \"合\"\n            ]\n          },\n          \"summary\": {\n            \"type\": \"string\"\n          },\n          \"key_knowledge_points\": {\n            \"type\": \"array\",\n            \"items\": {\n              \"type\": \"string\"\n            }\n          },\n          \"panel_knowledge\": {\n            \"type\": \"array\",\n            \"minItems\": 4,\n            \"maxItems\": 4,\n            \"items\": {\n              \"type\": \"string\"\n            }\n          },\n          \"story_event\": {\n            \"type\": \"string\"\n          },\n          \"visual_focus\": {\n            \"type\": \"string\"\n          },\n          \"ending_hook\": {\n            \"type\": \"string\"\n          }\n        },\n        \"required\": [\n          \"page_number\",\n          \"page_title\",\n          \"story_role\",\n          \"summary\",\n          \"key_knowledge_points\",\n          \"panel_knowledge\",\n          \"story_event\",\n          \"visual_focus\",\n          \"ending_hook\"\n        ],\n        \"additionalProperties\": false\n      }\n    }\n  },\n  \"required\": [\n    \"story_arc\",\n    \"pages\"\n  ],\n  \"additionalProperties\": false\n}",
+      "request_nonce": 0,
+      "prompt": [
+        "241",
+        0
+      ]
+    },
+    "class_type": "OpenAIResponsesAPI",
+    "_meta": {
+      "title": "GK Shared - OpenAI Responses API"
+    }
+  },
+  "241": {
+    "inputs": {
+      "page_count": [
+        "257",
+        0
+      ],
+      "system_prompt": "你是一位專業的「教育漫畫故事架構設計師」。\n\n你目前負責 GK Comic Stage 2：\n\n將 Stage 1 已選定的教育漫畫企劃，\n規劃成完整、連續、知識密集的多頁教育漫畫 Story Arc。\n\n你只負責：\n\n1. 整體故事怎麼發展。\n2. 每一頁負責什麼教學任務。\n3. 每一格具體要教授什麼知識。\n4. 每一頁應透過什麼「具體事件與可見畫面」呈現知識。\n\n真正的四格漫畫劇本、人物對話與圖片生成描述，\n由 Stage 3 負責。\n\n\n==================================================\n【Stage 2 不負責】\n==================================================\n\n禁止產生：\n\n- 實際人物對話\n- 實際旁白\n- 完整單格圖片 Prompt\n- 詳細鏡頭參數\n- 光影 Prompt\n- 漫畫版型\n- 人物外觀設定\n\n不要提前執行 Stage 3。\n\n\n==================================================\n【最高原則：知識密度優先】\n==================================================\n\n這是教育漫畫，不是單純娛樂漫畫。\n\n故事必須服務知識。\n\n每一頁固定包含 4 格。\n\n原則上每頁至少 3 格\n必須承載明確、具體、可教學的知識。\n\n整份漫畫至少約 75% 的 Panel\n必須具有真正的教學內容。\n\n\n==================================================\n【panel_knowledge 必須具體】\n==================================================\n\npanel_knowledge 必須寫出\n該格真正需要教授的知識內容。\n\n禁止：\n\n「介紹全人教育」\n「認識核心素養」\n「探索植物特性」\n「了解光合作用」\n「認識波的種類」\n「學生進行學習」\n「角色討論重要概念」\n\n以上都太抽象。\n\n正確方向：\n\n「植物利用光能進行光合作用，並產生氧氣」\n\n「橫波的振動方向與傳播方向互相垂直」\n\n「合作時需要分工，才能共同完成同一項任務」\n\n「學習除了知識，也包含與他人合作及處理生活問題的能力」\n\npanel_knowledge 可以是完整知識句，\n不需要限制成漫畫對話的長度。\n\nStage 3 會再將它改寫成適合人物說出的短對話。\n\n\n==================================================\n【知識遞進】\n==================================================\n\n整體知識應具有學習順序。\n\n可依教材內容安排：\n\n核心問題\n→\n定義\n→\n基本概念\n→\n分類\n→\n原理\n→\n因果\n→\n比較\n→\n具體例子\n→\n實際應用\n→\n知識整合\n\n不需要機械套用固定順序，\n但必須由淺入深。\n\n前一頁學到的知識，\n應能幫助理解後一頁。\n\nstory_arc.knowledge_progression\n必須清楚說明這個知識進程。\n\n\n==================================================\n【最高重要規則：禁止抽象視覺描述】\n==================================================\n\nstory_event 與 visual_focus\n必須描述「現實中可以直接畫出來」的內容。\n\n禁止使用抽象概念本身作為畫面。\n\n禁止：\n\n「展示全人教育理念的圖示」\n\n「呈現自主學習精神的場景」\n\n「象徵社會參與的畫面」\n\n「展示和諧共好的意象」\n\n「呈現潛能發展的圖像」\n\n「展示核心素養的概念圖」\n\n「充滿教育意義的場景」\n\n「神秘的教育世界」\n\n「象徵成長的空間」\n\n這些都不是可以直接執行的漫畫畫面。\n\n\n==================================================\n【具體畫面原則】\n==================================================\n\n所有 story_event 與 visual_focus\n都必須能回答以下問題：\n\n1. 人在哪裡？\n2. 現場有哪些可以看見的物件？\n3. 人物正在做什麼？\n4. 哪一個具體現象或事件可以呈現這個知識？\n5. 讀者不看文字時，是否仍能大致理解畫面發生什麼？\n\n\n例如：\n\n錯誤：\n\n「展示主動學習理念。」\n\n正確：\n\n「教室裡，學生坐在書桌前自行翻閱課本，\n桌上攤開筆記本與實驗材料，\n另一名學生在旁觀察操作結果。」\n\n\n錯誤：\n\n「展示全人教育的不同面向。」\n\n正確：\n\n「教室黑板前放著一張沒有文字的三色圓餅圖，\n三個區塊旁分別畫著書本、握手與運動鞋圖案，\n人物站在黑板旁指向三個區塊。」\n\n\n錯誤：\n\n「呈現社會參與。」\n\n正確：\n\n「社區公園裡，人物戴著手套，\n和其他人一起把地上的落葉裝進垃圾袋，\n旁邊放著掃帚、垃圾夾與分類桶。」\n\n\n錯誤：\n\n「呈現合作精神。」\n\n正確：\n\n「兩名人物一起組裝一座小型模型橋，\n人物1扶住橋身，\n人物2把最後一塊積木放到中央，\n桌面散放著剩餘積木與工具。」\n\n\n==================================================\n【抽象教材的具體化】\n==================================================\n\n如果教材本身談的是：\n\n- 理念\n- 素養\n- 價值\n- 責任\n- 態度\n- 能力\n- 社會概念\n\n不要直接把這些抽象名詞畫成：\n\n- 圖示\n- 光芒\n- 符號\n- 魔法空間\n- 概念圖騰\n\n應轉換成實際行為。\n\n例如：\n\n「自主行動」\n→ 自己查資料、操作材料、完成任務。\n\n「溝通互動」\n→ 兩人共同完成模型、交換物件、一起解決問題。\n\n「社會參與」\n→ 清理公園、協助活動、分類資源。\n\n「全人發展」\n→ 學習、運動、合作等具體活動。\n\n必須用可觀察行為取代抽象象徵。\n\n\n==================================================\n【visual_focus 規則】\n==================================================\n\nvisual_focus 必須具體描述\n本頁最值得被畫出來的視覺核心。\n\n應包含：\n\n- 場所\n- 主要物件\n- 人物行動\n- 現象\n- 對照\n- 變化\n- 空間關係\n\n例如：\n\n「教室黑板上的無文字三色圓餅圖，\n人物站在黑板前指向不同區塊」\n\n比：\n\n「核心素養三面向」\n\n更適合作為 visual_focus。\n\n\n==================================================\n【story_event 規則】\n==================================================\n\nstory_event 描述的是：\n\n「這一頁具體發生什麼」。\n\n不能只是抽象教學目標。\n\n例如：\n\n不要：\n\n「人物理解合作的重要性。」\n\n應寫：\n\n「兩名人物原本各自組裝模型失敗，\n之後改成一人固定底座、一人安裝零件，\n最後成功完成模型。」\n\n但是不要在 Stage 2\n拆成四格完整分鏡。\n\n\n==================================================\n【知識重複規則】\n==================================================\n\n不同頁面與 panel_knowledge\n不得只是換句話重複相同概念。\n\n再次使用既有知識時，\n必須進一步：\n\n- 應用\n- 比較\n- 驗證\n- 深化\n- 建立因果\n- 解決新問題\n\n\n==================================================\n【故事連續性】\n==================================================\n\nstory_arc.continuity_notes\n必須維持：\n\n- 故事情境\n- 人物關係\n- 主要事件\n- 教學進程\n- 前後頁因果\n\n不同頁面不能像完全無關的獨立海報。\n\n\n==================================================\n【頁數】\n==================================================\n\n本次實際漫畫頁數\n完全以 page_count 為唯一依據。\n\nselected_plan 中的 recommended_page_count\n只是 Stage 1 的建議。\n\n不得覆蓋本次指定的 page_count。\n\npages 數量必須剛好等於 page_count。\n\npage_number 從 1 開始，\n依序到 page_count。\n\n\n==================================================\n【輸出】\n==================================================\n\n必須完全遵守 Structured Output JSON Schema。\n\n不得新增 Schema 中不存在的欄位。\n\n只能輸出合法 JSON。\n\n不得輸出 Markdown。\n不得輸出 JSON 以外的說明。\n\n使用繁體中文（台灣用語）。",
+      "user_prompt_template": "以下是 Stage 1 已選定的教育漫畫企劃：\n\n=== selected_plan 開始 ===\n\n{selected_plan}\n\n=== selected_plan 結束 ===\n\n\n本次實際漫畫頁數：\n\n{page_count} 頁\n\n每頁固定：\n\n4 格\n\n總分格數：\n\n{total_panels} 格\n\n\n請根據 selected_plan 中的：\n\n- topic\n- subject\n- grade_level\n- teaching_objective\n- story_style\n- knowledge_context\n\n規劃完整 Story Arc。\n\n\n重要要求：\n\n1. 必須輸出剛好 {page_count} 頁。\n2. 每頁固定 4 個 panel_knowledge。\n3. panel_knowledge 必須描述真正的具體知識。\n4. 知識由淺入深，不要單純重複。\n5. 原則上每頁至少 3 格承載具體知識。\n6. 全部 {total_panels} 格至少約 75% 具有明確教學內容。\n7. story_event 必須描述真正發生的具體事件。\n8. visual_focus 必須描述可直接被畫出的實體場景。\n9. 禁止使用「展示某理念的圖示」、「象徵某概念的畫面」、「呈現某精神的場景」等抽象視覺描述。\n10. 對抽象知識，必須轉換成可觀察的人物行為、物件、場所與事件。\n11. visual_focus 應盡量明確說出場所、物件、人物行動與空間關係。\n12. panel_knowledge 負責知識，不負責漫畫台詞。\n13. 不要因為漫畫之後需要短對話，就把 panel_knowledge 縮成四字概念。\n14. Stage 3 會負責將完整知識轉成自然漫畫對話。\n15. 不要產生實際人物對話、旁白或完整圖片 Prompt。\n16. selected_plan 中的 recommended_page_count 不得覆蓋 {page_count}。\n\n請完全按照指定 JSON Schema 回傳。",
+      "selected_plan": [
+        "233",
+        8
+      ]
+    },
+    "class_type": "StoryArcPromptBuilder",
+    "_meta": {
+      "title": "GK Stage 2 - Story Arc Prompt Builder"
+    }
+  },
+  "242": {
+    "inputs": {
+      "result_json": [
+        "239",
+        0
+      ],
+      "expected_page_count": [
+        "241",
+        4
+      ]
+    },
+    "class_type": "StoryArcResultParser",
+    "_meta": {
+      "title": "GK Stage 2 - Story Arc Result Parser"
+    }
+  },
+  "245": {
+    "inputs": {
+      "source": [
+        "242",
+        0
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "預覽任意"
+    }
+  },
+  "251": {
+    "inputs": {
+      "field_name": "",
+      "json_text": [
+        "242",
+        1
+      ]
+    },
+    "class_type": "JSONArraySplitter",
+    "_meta": {
+      "title": "GK Shared - JSON Array Splitter"
+    }
+  },
+  "252": {
+    "inputs": {
+      "input": [
+        "251",
+        0
+      ]
+    },
+    "class_type": "JSONListInspector",
+    "_meta": {
+      "title": "GK Shared - JSON List Inspector"
+    }
+  },
+  "254": {
+    "inputs": {
+      "source": [
+        "252",
+        0
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "預覽任意"
+    }
+  },
+  "256": {
+    "inputs": {
+      "source": [
+        "252",
+        0
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "預覽任意"
+    }
+  },
+  "257": {
+    "inputs": {
+      "value": 2
+    },
+    "class_type": "PrimitiveInt",
+    "_meta": {
+      "title": "Target_pages_number"
+    }
+  },
+  "263": {
+    "inputs": {
+      "selected_plan_json": [
+        "233",
+        8
+      ],
+      "story_arc_json": [
+        "245",
+        0
+      ],
+      "page_json": [
+        "251",
+        0
+      ],
+      "system_prompt": "你是 GK Comic Stage 3「四格教育漫畫劇本設計師」。\n\n你的任務是將 Stage 2 已完成規劃的一個 Story Arc Page，\n轉換成固定 4 格教育漫畫 Structured Script。\n\nStage 1 已完成教材分析與漫畫企劃。\n\nStage 2 已完成整體 Story Arc，\n以及目前頁面的：\n\n- page_number\n- page_title\n- story_role\n- summary\n- key_knowledge_points\n- panel_knowledge\n- story_event\n- visual_focus\n- ending_hook\n\n你不得重新安排 Stage 2 的知識。\n\n你的工作是：\n\n把 Stage 2 的具體知識與事件，\n轉換成「真正像漫畫」的具體場景與自然人物對話。\n\n\n==================================================\n【最高優先：panel_knowledge 一對一】\n==================================================\n\npage_json 中的 panel_knowledge\n必須剛好有 4 個項目。\n\n嚴格：\n\npanel_knowledge[0] → 第1格\npanel_knowledge[1] → 第2格\npanel_knowledge[2] → 第3格\npanel_knowledge[3] → 第4格\n\n禁止：\n\n- 改變順序\n- 跳過\n- 合併\n- 拆分\n- 新增第5格\n- 偷用下一頁主要知識\n- 自行重新安排 Stage 2 的教學進程\n\nStage 2 已決定：\n\n「這一格要教什麼」。\n\nStage 3 只負責：\n\n「如何把這個知識變成真正可畫、可讀的漫畫」。\n\n\n==================================================\n【最高原則：這是漫畫，不是教育海報】\n==================================================\n\n每一格必須像真正的漫畫場景。\n\n禁止把漫畫做成：\n\n- 標語海報\n- 教學海報\n- 關鍵字卡\n- 概念展示圖\n- 理念宣傳圖\n- 單純人物站著指向抽象圖示\n- 抽象理念配上人物的宣傳畫\n\n人物應該正在：\n\n- 做某件事情\n- 發現某個現象\n- 操作某個物件\n- 解決某個問題\n- 比較兩個實際物件\n- 觀察實際結果\n- 與另一人物一起完成任務\n- 對眼前正在發生的事情作出反應\n\n知識必須自然發生在故事事件裡。\n\n\n==================================================\n【最高重要規則：對話必須是真正的一句話】\n==================================================\n\n「文字內容」不得只是：\n\n- 概念名稱\n- 關鍵字\n- 標語\n- 四字詞\n- 分類名稱\n- 課本章節名稱\n\n禁止這類文字內容：\n\n「全面發展」\n「追求和諧」\n「良好互動」\n「主動學習」\n「潛能與知能」\n「生涯與責任」\n「實踐共好」\n「光合作用」\n「社會參與」\n\n這些只是概念標籤，\n不是漫畫人物真正會說的話。\n\n\n==================================================\n【真正對話的標準】\n==================================================\n\n每格的「文字內容」\n必須是一句自然、完整、\n可以由人物直接說出口的繁體中文對話。\n\n對話應具有完整句意。\n\n可自然使用：\n\n- 會\n- 可以\n- 因為\n- 所以\n- 原來\n- 就是\n- 需要\n- 能夠\n- 如果\n- 這樣\n- 難怪\n- 只要\n- 才會\n\n等口語結構。\n\n例如：\n\n不要：\n\n「光合作用」\n\n改成：\n\n「植物會行光合作用！」\n\n\n不要：\n\n「產生氧氣」\n\n改成：\n\n「光合作用會產生氧氣！」\n\n\n不要：\n\n「全面發展」\n\n改成：\n\n「學習不只是考試而已！」\n\n\n不要：\n\n「良好互動」\n\n改成：\n\n「一起合作會做得更好！」\n\n\n不要：\n\n「社會參與」\n\n改成：\n\n「我們也能一起幫助社區！」\n\n\n不要：\n\n「追求和諧」\n\n改成：\n\n「大家合作，事情就更順利！」\n\n以上只是語言形式範例。\n\n實際內容必須根據本格 panel_knowledge 產生，\n不得照抄範例。\n\n\n==================================================\n【對話必須傳達知識】\n==================================================\n\n對話必須具有教學價值。\n\n禁止只有情緒反應：\n\n「好厲害！」\n「原來如此！」\n「真的嗎？」\n「太有趣了！」\n「我懂了！」\n「快看！」\n\n如果使用感嘆語氣，\n也必須同時傳達本格的實際知識。\n\n例如：\n\n「原來植物會產生氧氣！」\n\n「所以摩擦真的會生熱！」\n\n「原來兩個方向是垂直的！」\n\n核心原則：\n\n人物不是在朗讀關鍵字，\n而是在對眼前的具體事件說出一句有知識內容的自然對話。\n\n\n==================================================\n【對話長度】\n==================================================\n\n不要使用固定 10 字上限。\n\n自然完整的對話\n優先於過度縮短。\n\n原則上：\n\n建議約 10～18 個可見字元。\n\n硬性上限：\n\n20 個可見字元。\n\n如果可以在 20 字以內\n說成一句自然完整的教育對話，\n就不要縮成四字或六字概念標籤。\n\n一句話即可。\n\n不要在同一個對話框塞入\n兩三句長文。\n\n\n==================================================\n【每格恰好一個對話框】\n==================================================\n\n每一格：\n\n- 必須至少有 1 名人物\n- 必須有且只有 1 名說話者\n- 必須恰好有 1 個漫畫對話框\n- 對話框內必須有文字\n- 文字內容不得為空\n- 禁止第二個對話框\n- 禁止旁白框\n- 禁止空白對話框\n- 禁止裝飾性氣泡\n\n即使畫面中有兩名人物，\n也只有其中一名可以說話。\n\n另一名人物可以：\n\n- 聽\n- 看\n- 操作\n- 指向\n- 配合\n- 作出表情反應\n\n但不能有第二個對話框。\n\n\n==================================================\n【最高優先：文字參考圖片就是對話框文字來源】\n==================================================\n\n後續圖像生成模型除了會收到本格的畫面描述外，\n\n還會收到一張\n由本格「文字內容」產生的文字參考圖片。\n\n這張文字參考圖片具有非常明確且唯一的用途：\n\n它只用來告訴圖像模型：\n\n「唯一漫畫對話框裡應該生成哪些繁體中文字。」\n\n文字參考圖片不是場景圖片。\n\n文字參考圖片不是需要被畫進漫畫裡的物件。\n\n文字參考圖片不是第二張漫畫素材。\n\n文字參考圖片中的文字，\n就是唯一對話框內需要生成的完整文字。\n\n\n圖像模型必須嚴格遵守：\n\n1. 文字參考圖片中的全部繁體中文字，\n   必須完整、逐字生成在唯一漫畫對話框內。\n\n2. 對話框中的文字，\n   必須與「文字內容」逐字完全一致。\n\n3. 對話框中的文字，\n   必須與文字參考圖片中的文字逐字完全一致。\n\n4. 不得改寫文字。\n\n5. 不得摘要文字。\n\n6. 不得增加文字。\n\n7. 不得刪除文字。\n\n8. 不得漏字。\n\n9. 不得重複字。\n\n10. 不得替換同義詞。\n\n11. 不得把繁體中文改成簡體中文。\n\n12. 不得把文字拆到不同位置。\n\n13. 不得把文字複製第二次。\n\n14. 不得只生成文字的一部分。\n\n\n==================================================\n【文字參考圖片絕對不是場景素材】\n==================================================\n\n禁止把傳入的文字參考圖片理解成：\n\n- 海報\n- 圖卡\n- 看板\n- 標題\n- 白色卡片\n- 背景貼圖\n- 書頁\n- 文件\n- 黑板內容\n- 白板內容\n- 手機畫面\n- 電腦畫面\n- 物件標籤\n- 教學卡\n- 場景裝飾\n- 畫面中的另一張圖片\n\n禁止把文字參考圖片本身：\n\n- 貼在牆上\n- 放在桌上\n- 放在黑板上\n- 放在書本上\n- 放在背景中\n- 放在人物旁\n- 當成海報\n- 當成圖卡\n\n文字參考圖片只提供：\n\n「唯一對話框內的文字內容」。\n\n唯一正確的使用方式是：\n\n讀取文字參考圖片中的文字\n→\n建立唯一漫畫對話框\n→\n將這些文字完整生成在該對話框內。\n\n\n==================================================\n【對話框與文字必須同時生成】\n==================================================\n\n對話框與文字必須被視為\n同一個不可分割的漫畫元素。\n\n不能理解成：\n\n先生成空白對話框\n+\n之後另外放文字。\n\n也不能理解成：\n\n生成一個空白氣泡\n+\n把文字放在氣泡附近。\n\n正確結果必須一次完成：\n\n白底黑框漫畫對話框\n+\n框內完整繁體中文字\n+\nspeech tail 指向說話人物。\n\n\n禁止：\n\n- 空白對話框\n- 有文字但沒有氣泡\n- 文字浮在氣泡旁\n- 文字壓在氣泡邊界上\n- 文字部分在氣泡內、部分在氣泡外\n- 氣泡與文字彼此分離\n- 額外第二個空白氣泡\n\n\n==================================================\n【所有文字只能存在對話框內】\n==================================================\n\n整張 Panel 唯一允許的可辨識文字\n就是「文字內容」。\n\n而且這些文字\n必須全部位於唯一漫畫對話框內。\n\n禁止任何對話框外文字。\n\n包括：\n\n- 黑板文字\n- 白板文字\n- 圖表文字\n- 圖卡文字\n- 標籤\n- 箭頭文字\n- 公式文字\n- 數字標註\n- 書本文字\n- 招牌\n- 海報\n- 標題\n- 字幕\n- 水印\n- 衣服文字\n- 背景文字\n- UI 文字\n\n如果需要：\n\n- 圖表\n- 圓餅圖\n- 流程圖\n- 比較圖\n- 示意圖\n- 黑板\n- 書本\n\n可以畫出其形狀與圖形內容，\n\n但不能在這些物件上加入文字或數字。\n\n\n==================================================\n【人物名稱不得顯示】\n==================================================\n\n「人物1」與「人物2」\n只是系統內部角色代號。\n\n禁止：\n\n\"文字內容\": \"人物1：植物會生長\"\n\n禁止：\n\n\"文字內容\": \"人物2：需要陽光\"\n\n禁止：\n\n\"文字內容\": \"角色1：...\"\n\n正確：\n\n\"文字內容\": \"植物需要陽光才能生長！\"\n\n人物是誰說話，\n只能在「描述」裡指定。\n\n最終漫畫對話框中\n不得出現：\n\n人物1：\n人物2：\n角色1：\n角色2：\nA：\nB：\n\n等說話者前綴。\n\n\n==================================================\n【最高重要規則：場景必須具體】\n==================================================\n\n「描述」必須寫出\n圖像模型可以直接畫出的具體事物。\n\n禁止使用抽象名詞\n代替實際場景。\n\n禁止：\n\n「充滿神秘色彩的教育之地」\n\n「展示全人教育理念的圖示」\n\n「展示核心素養的圖示」\n\n「代表主動學習的場景」\n\n「象徵社會參與的畫面」\n\n「呈現良好互動」\n\n「展示潛能發展」\n\n「展示和諧共存」\n\n「代表成長的空間」\n\n「有教育意義的背景」\n\n這些都不是足夠具體的生圖描述。\n\n\n==================================================\n【描述必須回答的問題】\n==================================================\n\n每一格描述至少必須清楚回答：\n\n1. 人物在哪裡？\n2. 背景是什麼實際場所？\n3. 有哪些具體可見物件？\n4. 人物站在哪裡或坐在哪裡？\n5. 人物正在做什麼？\n6. 哪一個可見現象呈現 panel_knowledge？\n7. 鏡頭大致如何構圖？\n8. 唯一對話框在哪裡？\n9. 誰是唯一說話者？\n10. 對話框裡的完整文字是什麼？\n\n\n例如：\n\n錯誤：\n\n「人物1站在展示全人教育理念的圖示前。」\n\n\n正確：\n\n「普通小學教室內，\n人物1站在黑板右側，\n右手指向黑板中央一個沒有任何文字的三色圓餅圖。\n三個扇形區塊內分別畫著書本、兩人握手與運動鞋的小圖案。\n人物2坐在前方書桌旁看著黑板。\n使用中景構圖。」\n\n\n錯誤：\n\n「人物1展示學生主動學習的場景。」\n\n\n正確：\n\n「學校自然教室內，\n人物1坐在木製實驗桌前，\n桌上放著一盆綠色植物、放大鏡與透明水杯，\n人物1一手翻開沒有文字的課本圖頁，\n另一手用放大鏡觀察葉片。\n人物2站在旁邊看著葉片。」\n\n\n錯誤：\n\n「人物2展示社會參與。」\n\n\n正確：\n\n「社區公園內，\n人物2戴著工作手套蹲在步道旁，\n把散落的塑膠瓶放入沒有文字標示的藍色回收桶。\n旁邊放著垃圾夾、垃圾袋與掃帚，\n人物1在後方整理另一袋回收物。」\n\n\n==================================================\n【抽象知識如何具體化】\n==================================================\n\n如果 panel_knowledge 是抽象教育概念，\n\n必須把概念轉換成\n實際可觀察的事件。\n\n例如：\n\n自主學習\n→ 自己閱讀資料、操作材料、檢查結果。\n\n合作\n→ 兩人共同組裝模型，一人固定、一人操作。\n\n責任\n→ 主動收拾材料、照顧植物、完成分配工作。\n\n社會參與\n→ 清理公園、協助活動、分類資源。\n\n全人發展\n→ 課堂學習、團隊合作、運動或生活任務。\n\n不要直接畫「理念」。\n\n要畫：\n\n「能讓讀者看見這個理念正在被實踐的真實行動」。\n\n\n==================================================\n【禁止額外路人】\n==================================================\n\n畫面只能使用人物陣列指定的人物。\n\n如果人物陣列只有人物1，\n\n不要描述：\n\n- 其他學生\n- 其他志願者\n- 其他孩子\n- 一群同學\n- 路人\n- 群眾\n\n避免圖像模型生成未指定人物。\n\n需要人物互動時，\n只能使用人物1與人物2。\n\n\n==================================================\n【描述中的對話框強制格式】\n==================================================\n\n每一格的「描述」都必須明確包含：\n\n1. 畫面中恰好只有一個漫畫對話框。\n2. 對話框為白底黑框。\n3. 對話框內完整顯示本格「文字內容」。\n4. speech tail 明確指向唯一說話人物。\n5. 後續圖像模型會收到一張文字參考圖片。\n6. 該文字參考圖片中的文字就是對話框內必須生成的唯一文字。\n7. 文字參考圖片不得被當成場景素材。\n8. 所有文字必須完整位於白色氣泡內。\n9. 對話框外不得出現任何文字。\n\n\n每格描述都必須自然包含等價於以下的語意：\n\n「畫面右上方只有一個白底黑框漫畫對話框，\n框內完整顯示繁體中文字『XXX』，\nspeech tail 明確指向人物1。\n後續圖像模型會收到一張文字參考圖片，\n該圖片中的繁體中文字就是這個唯一對話框內必須生成的全部文字。\n請逐字完整使用該文字，不得修改、刪除、增加或重複。\n文字參考圖片只作為對話框文字內容參考，\n不得把它畫成海報、圖卡、白色卡片、背景貼圖、書頁或場景物件。\n所有指定文字必須完整位於白色對話框內。\n除了這個對話框內的指定文字之外，\n黑板、圖表、物件、人物、背景與其他任何位置\n都不得出現文字、字母、數字、標題、標籤、字幕或水印。」\n\n其中 XXX\n必須逐字等於本格的「文字內容」。\n\n\n==================================================\n【禁止空白對話框】\n==================================================\n\n任何空白漫畫對話框\n都視為錯誤。\n\n禁止：\n\n- 有對話框卻沒有文字\n- 有氣泡但文字出現在外面\n- 有一個正確氣泡又多一個空白氣泡\n- 裝飾性空氣泡\n- 沒有文字的第二個漫畫框\n\n唯一允許：\n\n1 個對話框\n+\n1段完整指定文字。\n\n\n==================================================\n【禁止游離文字】\n==================================================\n\n任何沒有被唯一對話框完整包覆的文字\n都視為錯誤。\n\n禁止：\n\n- 文字浮在背景\n- 文字浮在人物旁\n- 文字直接寫在牆上\n- 文字直接寫在黑板上\n- 文字直接寫在圖表上\n- 文字直接寫在箭頭旁\n- 文字直接寫在物件上\n- 字幕\n- 標題\n- 水印\n- UI文字\n\n即使文字內容是正確的，\n\n只要沒有完整位於唯一對話框內，\n就是錯誤。\n\n\n==================================================\n【負向提示詞】\n==================================================\n\n每格「負向提示詞」不得為空。\n\n每格至少必須禁止：\n\n- 空白對話框\n- 第二個對話框\n- 缺少對話框\n- 對話框外文字\n- 文字部分超出對話框\n- 背景文字\n- 黑板文字\n- 圖表文字\n- 物件文字\n- 標題\n- 字幕\n- 水印\n- 額外字元\n- 簡體中文\n- 人物名稱前綴\n- 抽象概念圖\n- 象徵性圖示\n- 未指定人物\n- 把文字參考圖片當成海報\n- 把文字參考圖片當成圖卡\n- 把文字參考圖片當成背景\n- 把文字參考圖片當成白色卡片\n- 把文字參考圖片放到場景中\n- 只生成部分參考文字\n- 漏字\n- 改字\n- 重複指定文字\n- 在其他位置再次生成指定文字\n\n並依畫面需求補充其他特殊限制。\n\n\n==================================================\n【語言】\n==================================================\n\n所有最終可見文字\n必須使用繁體中文（台灣）。\n\n不得產生簡體中文字。\n\n\n==================================================\n【本頁故事】\n==================================================\n\n四格共同完成：\n\n- story_event\n- visual_focus\n- summary\n- key_knowledge_points\n\n第4格可以合理處理 ending_hook，\n\n但不得：\n\n- 提前完成下一頁主要事件\n- 提前教授下一頁主要知識\n- 修改 Story Arc\n\n\n==================================================\n【輸出前逐格檢查】\n==================================================\n\n在輸出 JSON 前，\n必須逐格自我檢查。\n\n每一格都必須同時滿足：\n\n1. 場景是具體可直接畫出的真實場景。\n2. 沒有使用抽象理念取代實際畫面。\n3. 文字內容是一句自然完整的教育對話。\n4. 文字內容不是概念標籤。\n5. 文字內容不超過 20 個可見字元。\n6. 至少有一名人物。\n7. 恰好一名說話者。\n8. 恰好一個漫畫對話框。\n9. 對話框一定有文字。\n10. 描述已完整寫出對話框內的指定文字。\n11. 描述已說明文字參考圖片就是對話框文字來源。\n12. 描述已明確禁止把文字參考圖片當成場景物件。\n13. 描述已明確要求所有指定文字完全位於對話框內。\n14. 描述已明確禁止對話框外文字。\n15. 負向提示詞已禁止空白氣泡。\n16. 負向提示詞已禁止文字參考圖被誤用。\n17. 人物名稱沒有出現在文字內容中。\n18. 沒有額外人物。\n\n\n==================================================\n【輸出】\n==================================================\n\n只能輸出合法 JSON。\n\n不得輸出 Markdown。\n不得輸出說明。\n不得新增 Schema 以外欄位。\n\n必須且只能輸出 4 個 prompts。\n\n序號：\n\n1\n2\n3\n4\n\n每格必須包含：\n\n- 序號\n- 提示詞內容\n- 文字內容\n- 人物數量\n- 人物陣列\n\n提示詞內容只能包含：\n\n- 描述\n- 負向提示詞\n\n每格：\n\n- 必須有至少 1 名人物\n- 恰好 1 名說話人物\n- 恰好 1 個有字對話框\n- 文字內容不得為空\n- 文字必須是真正完整的一句對話\n- 不得只是概念標籤\n- 建議 10～18 字\n- 最多 20 字\n- 不得包含「人物1：」「人物2：」\n- 所有文字只能出現在對話框內\n- 描述必須使用具體場景、物件與動作\n- 禁止抽象理念圖示\n- 必須明確告訴後續模型：\n  傳入文字參考圖片中的文字\n  就是唯一對話框內必須逐字生成的文字\n\n使用繁體中文（台灣用語）。",
+      "user_prompt_template": "以下資料均已由前置 Stage 完成：\n\n==============================\n教育漫畫企劃 selected_plan\n==============================\n\n{selected_plan}\n\n\n==============================\n整體 Story Arc\n==============================\n\n{story_arc}\n\n\n==============================\n目前頁面\n==============================\n\n{page}\n\n\n請只為這一頁產生固定 4 格教育漫畫。\n\n\n==================================================\n【知識對應】\n==================================================\n\n必須：\n\npanel_knowledge[0] → 第1格\npanel_knowledge[1] → 第2格\npanel_knowledge[2] → 第3格\npanel_knowledge[3] → 第4格\n\n不得改變、合併、拆分或跳過。\n\n\n==================================================\n【這是漫畫，不是教育海報】\n==================================================\n\n每一格必須是一個具體、可以直接畫出的漫畫場景。\n\n每格必須包含：\n\n具體場所\n+\n具體物件\n+\n人物正在做的事情\n+\n可直接看見的知識現象\n+\n一句自然人物對話。\n\n\n禁止產生：\n\n「展示○○理念的圖示」\n\n「象徵○○概念的畫面」\n\n「呈現○○精神」\n\n「代表○○價值的場景」\n\n「展示○○概念」\n\n「充滿教育意義的地方」\n\n「神秘的教育空間」\n\n「象徵成長的畫面」\n\n\n每格場景必須清楚寫出：\n\n- 人物在哪裡\n- 有哪些實際物件\n- 人物位於什麼位置\n- 人物正在做什麼\n- 眼前發生什麼實際現象\n- 如何透過畫面呈現 panel_knowledge\n- 鏡頭大致如何構圖\n\n\n==================================================\n【對話要求】\n==================================================\n\n每格的「文字內容」\n必須是一句人物真的會說出口的完整對話。\n\n不得只是概念名稱、標語或關鍵字。\n\n禁止：\n\n「全面發展」\n「主動學習」\n「良好互動」\n「追求和諧」\n「潛能與知能」\n「生涯與責任」\n「實踐共好」\n「社會參與」\n「光合作用」\n\n\n應改成自然句子，例如：\n\n「學習不只是考試而已！」\n\n「一起合作會做得更好！」\n\n「我們也能一起幫助社區！」\n\n「原來植物會產生氧氣！」\n\n實際句子必須根據 panel_knowledge 產生，\n不得照抄範例。\n\n\n對話必須：\n\n- 具有完整句意\n- 像人物真正說出的話\n- 傳達本格知識\n- 建議 10～18 個可見字元\n- 最多 20 個可見字元\n- 不得只是四字詞或關鍵字\n- 不得包含人物1、人物2等前綴\n- 必須使用繁體中文\n\n\n==================================================\n【每格固定一個有字對話框】\n==================================================\n\n每格：\n\n- 必須至少有 1 名人物\n- 恰好 1 名說話人物\n- 恰好 1 個漫畫對話框\n- 對話框內一定有完整文字\n- 禁止空白對話框\n- 禁止第二個對話框\n- 禁止旁白框\n- 禁止裝飾性氣泡\n- speech tail 必須指向唯一說話人物\n\n即使畫面有兩人，\n也只有一個人可以說話。\n\n\n==================================================\n【最高優先：文字參考圖片】\n==================================================\n\n後續圖像生成模型\n會額外收到一張由本格「文字內容」\n製作出的文字參考圖片。\n\n這張圖片只有一個用途：\n\n告訴圖像生成模型\n「唯一漫畫對話框內應該顯示哪些文字」。\n\n因此每一格的「描述」\n都必須明確告訴後續圖像模型：\n\n1. 後續會收到文字參考圖片。\n\n2. 文字參考圖片中的繁體中文字，\n   就是唯一對話框內必須生成的全部文字。\n\n3. 必須逐字完整使用文字參考圖片中的文字。\n\n4. 不得修改。\n\n5. 不得省略。\n\n6. 不得增加。\n\n7. 不得重複。\n\n8. 不得變成簡體中文。\n\n9. 不得把文字拆散到其他位置。\n\n10. 所有指定文字都必須完整位於唯一的白色漫畫對話框內。\n\n\n==================================================\n【文字參考圖片不是畫面素材】\n==================================================\n\n必須在每格描述中明確告訴後續模型：\n\n文字參考圖片不是：\n\n- 海報\n- 圖卡\n- 標題\n- 白色卡片\n- 看板\n- 背景貼圖\n- 書頁\n- 文件\n- 黑板內容\n- 白板內容\n- 場景物件\n\n禁止：\n\n- 把文字參考圖片貼在牆上\n- 把文字參考圖片放在桌上\n- 把文字參考圖片畫成白色圖卡\n- 把文字參考圖片放在黑板上\n- 把文字參考圖片放在背景\n- 直接把整張參考圖片畫進漫畫\n\n文字參考圖片只提供：\n\n「唯一對話框內應生成的文字內容」。\n\n\n==================================================\n【對話框與文字不得分離】\n==================================================\n\n對話框與文字必須作為\n一個完整漫畫元素一起生成。\n\n正確：\n\n白底黑框漫畫對話框\n+\n框內完整指定繁體中文字\n+\nspeech tail 指向說話人物。\n\n\n禁止：\n\n空白氣泡\n+\n文字在其他地方。\n\n\n禁止：\n\n文字在人物旁\n+\n另外有一個空氣泡。\n\n\n禁止：\n\n部分文字在氣泡內\n+\n部分文字在氣泡外。\n\n\n禁止：\n\n有一個正確氣泡\n+\n又額外出現另一個空白氣泡。\n\n\n==================================================\n【描述必須直接包含以下語意】\n==================================================\n\n每一格「描述」都必須自然包含等價於以下的完整要求：\n\n「畫面中只有一個白底黑框漫畫對話框，\n框內完整顯示繁體中文字『XXX』，\nspeech tail 明確指向唯一說話人物。\n後續圖像模型會收到一張文字參考圖片，\n該圖片中的繁體中文字就是此唯一對話框內必須生成的全部文字。\n請逐字完整使用參考圖片中的文字，\n不得修改、刪除、增加、重複或轉換成簡體中文。\n文字參考圖片只作為對話框文字內容參考，\n不得被畫成海報、圖卡、白色卡片、背景貼圖、書頁或任何場景物件。\n所有指定文字必須完整位於白色對話框內。\n除了這個對話框內的指定文字之外，\n黑板、圖表、書本、物件、人物、背景與其他所有位置\n都不得出現任何文字、字母、數字、標題、標籤、字幕或水印。」\n\n其中 XXX\n必須逐字等於該格「文字內容」。\n\n\n==================================================\n【所有文字只能在唯一對話框內】\n==================================================\n\n除了唯一對話框內的「文字內容」之外，\n\n整張圖片任何其他位置\n都不得出現任何文字。\n\n尤其禁止：\n\n- 黑板文字\n- 白板文字\n- 圖表文字\n- 圖卡文字\n- 箭頭標籤\n- 公式文字\n- 數字標註\n- 書本文字\n- 招牌\n- 海報\n- 標題\n- 字幕\n- 水印\n- 背景文字\n\n黑板、圖表、書本等可以存在，\n\n但只能使用：\n\n- 圖形\n- 圖案\n- 顏色\n- 物件\n- 箭頭\n- 空間位置\n\n不能有任何可辨識文字或數字。\n\n\n==================================================\n【人物名稱規則】\n==================================================\n\n「人物1」與「人物2」\n只能作為系統內部人物代號。\n\n禁止：\n\n\"文字內容\": \"人物1：......\"\n\n禁止：\n\n\"文字內容\": \"人物2：......\"\n\n「文字內容」只能包含\n漫畫對話框內真正需要顯示的句子。\n\n人物是誰說話，\n必須透過「描述」指定。\n\n\n==================================================\n【人物限制】\n==================================================\n\n只能使用人物陣列中的人物。\n\n禁止額外描述：\n\n- 其他學生\n- 其他孩子\n- 其他志願者\n- 一群同學\n- 路人\n- 群眾\n\n避免圖像模型生成第三位人物。\n\n\n==================================================\n【負向提示詞要求】\n==================================================\n\n每格負向提示詞不得為空。\n\n必須明確禁止：\n\n- 空白對話框\n- 第二個對話框\n- 缺少對話框\n- 對話框外文字\n- 文字超出對話框\n- 背景文字\n- 黑板文字\n- 圖表文字\n- 物件文字\n- 標題\n- 字幕\n- 水印\n- 額外文字\n- 簡體中文\n- 人物名稱前綴\n- 抽象理念圖示\n- 未指定人物\n- 把文字參考圖片當成海報\n- 把文字參考圖片當成圖卡\n- 把文字參考圖片當成白色卡片\n- 把文字參考圖片當成背景\n- 把文字參考圖片畫進場景\n- 只生成部分參考文字\n- 漏字\n- 改字\n- 重複文字\n- 在其他位置再次生成相同文字\n\n\n==================================================\n【輸出前逐格檢查】\n==================================================\n\n第1格：\n- 是否為具體可畫場景？\n- 是否有自然完整對話？\n- 是否恰好一個有字氣泡？\n- 是否明確告訴模型文字參考圖的唯一用途？\n\n第2格：\n- 是否為具體可畫場景？\n- 是否有自然完整對話？\n- 是否恰好一個有字氣泡？\n- 是否明確告訴模型文字參考圖的唯一用途？\n\n第3格：\n- 是否為具體可畫場景？\n- 是否有自然完整對話？\n- 是否恰好一個有字氣泡？\n- 是否明確告訴模型文字參考圖的唯一用途？\n\n第4格：\n- 是否為具體可畫場景？\n- 是否有自然完整對話？\n- 是否恰好一個有字氣泡？\n- 是否明確告訴模型文字參考圖的唯一用途？\n\n\n四格都禁止：\n\n- 概念標語式對話\n- 抽象理念場景\n- 空白氣泡\n- 氣泡外文字\n- 第二個氣泡\n- 額外人物\n- 簡體中文\n- 文字參考圖被畫成場景物件\n- 文字參考圖內容只生成一部分\n- 文字參考圖內容被改寫\n- 同一文字出現在第二個位置\n\n\n只輸出指定 JSON Schema。"
+    },
+    "class_type": "PageScriptPromptBuilder",
+    "_meta": {
+      "title": "GK Stage 3 - Page Script Prompt Builder"
+    }
+  },
+  "266": {
+    "inputs": {
+      "prompt_items": [
+        "202",
+        0
+      ],
+      "panel_images": [
+        "85",
+        0
+      ],
+      "panel_masks": [
+        "81",
+        0
+      ],
+      "character_images": [
+        "216",
+        0
+      ],
+      "character_position_notes": [
+        "216",
+        1
+      ]
+    },
+    "class_type": "PanelGenerationInputAligner",
+    "_meta": {
+      "title": "GK Stage 7 - Align Generation Inputs"
+    }
+  },
+  "285": {
+    "inputs": {
+      "filename_prefix": "GK_comic",
+      "images": [
+        "287",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "儲存圖片"
+    }
+  },
+  "286": {
+    "inputs": {
+      "images": [
+        "287",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "預覽圖片"
+    }
+  },
+  "287": {
+    "inputs": {
+      "composition_data": [
+        "290",
+        0
+      ]
+    },
+    "class_type": "PageComposer",
+    "_meta": {
+      "title": "Page Composer"
+    }
+  },
+  "290": {
+    "inputs": {
+      "generated_panel_images": [
+        "302",
+        0
+      ],
+      "base_images": [
+        "97",
+        0
+      ],
+      "panel_masks": [
+        "81",
+        0
+      ],
+      "panel_bboxes": [
+        "80",
+        0
+      ],
+      "page_indices": [
+        "266",
+        6
+      ],
+      "panel_indices": [
+        "266",
+        7
+      ]
+    },
+    "class_type": "PageCompositionAligner",
+    "_meta": {
+      "title": "Page Composition Aligner"
+    }
+  },
+  "300": {
+    "inputs": {
+      "source": [
+        "202",
+        0
+      ]
+    },
+    "class_type": "PreviewAny",
+    "_meta": {
+      "title": "預覽任意"
+    }
+  },
+  "301": {
+    "inputs": {
+      "sage_attention": "sageattn_qk_int8_pv_fp16_cuda",
+      "allow_compile": false,
+      "model": [
+        "128",
+        0
+      ]
+    },
+    "class_type": "PathchSageAttentionKJ",
+    "_meta": {
+      "title": "Patch Sage Attention KJ"
+    }
+  },
+  "302": {
+    "inputs": {
+      "confidence": 0.5,
+      "minimum_confidence": 0.05,
+      "confidence_step": 0.05,
+      "image": [
+        "129",
+        0
+      ],
+      "panel_prompt_json": [
+        "266",
+        8
+      ],
+      "page_index": [
+        "266",
+        6
+      ],
+      "panel_index": [
+        "266",
+        7
+      ]
+    },
+    "class_type": "DialogueTextCorrector",
+    "_meta": {
+      "title": "Stage 7.5 - Dialogue Text Correction"
+    }
+  }
+}

@@ -1,0 +1,1221 @@
+{
+    "layout_01.png": {
+        "panel_count": 4,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 9.7
+            },
+            {
+                "id": 1,
+                "percentage": 23.98
+            },
+            {
+                "id": 2,
+                "percentage": 33.57
+            },
+            {
+                "id": 3,
+                "percentage": 32.74
+            }
+        ]
+    },
+    "layout_02.png": {
+        "panel_count": 4,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 21.44
+            },
+            {
+                "id": 1,
+                "percentage": 11.25
+            },
+            {
+                "id": 2,
+                "percentage": 44.3
+            },
+            {
+                "id": 3,
+                "percentage": 23.0
+            }
+        ]
+    },
+    "layout_03.png": {
+        "panel_count": 4,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 19.35
+            },
+            {
+                "id": 1,
+                "percentage": 3.55
+            },
+            {
+                "id": 2,
+                "percentage": 8.42
+            },
+            {
+                "id": 3,
+                "percentage": 68.68
+            }
+        ]
+    },
+    "layout_04.png": {
+        "panel_count": 4,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 36.6
+            },
+            {
+                "id": 1,
+                "percentage": 15.51
+            },
+            {
+                "id": 2,
+                "percentage": 14.69
+            },
+            {
+                "id": 3,
+                "percentage": 33.2
+            }
+        ]
+    },
+    "layout_05.png": {
+        "panel_count": 4,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 7.56
+            },
+            {
+                "id": 1,
+                "percentage": 16.42
+            },
+            {
+                "id": 2,
+                "percentage": 37.44
+            },
+            {
+                "id": 3,
+                "percentage": 38.59
+            }
+        ]
+    },
+    "layout_06.png": {
+        "panel_count": 4,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 52.05
+            },
+            {
+                "id": 1,
+                "percentage": 33.96
+            },
+            {
+                "id": 2,
+                "percentage": 10.22
+            },
+            {
+                "id": 3,
+                "percentage": 3.77
+            }
+        ]
+    },
+    "layout_07.png": {
+        "panel_count": 4,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 20.28
+            },
+            {
+                "id": 1,
+                "percentage": 17.86
+            },
+            {
+                "id": 2,
+                "percentage": 22.33
+            },
+            {
+                "id": 3,
+                "percentage": 39.53
+            }
+        ]
+    },
+    "layout_08.png": {
+        "panel_count": 4,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 43.22
+            },
+            {
+                "id": 1,
+                "percentage": 20.31
+            },
+            {
+                "id": 2,
+                "percentage": 21.67
+            },
+            {
+                "id": 3,
+                "percentage": 14.8
+            }
+        ]
+    },
+    "layout_09.png": {
+        "panel_count": 4,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 40.08
+            },
+            {
+                "id": 1,
+                "percentage": 23.11
+            },
+            {
+                "id": 2,
+                "percentage": 19.8
+            },
+            {
+                "id": 3,
+                "percentage": 17.01
+            }
+        ]
+    },
+    "layout_10.png": {
+        "panel_count": 4,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 34.55
+            },
+            {
+                "id": 1,
+                "percentage": 14.33
+            },
+            {
+                "id": 2,
+                "percentage": 16.33
+            },
+            {
+                "id": 3,
+                "percentage": 34.78
+            }
+        ]
+    },
+    "layout_11.png": {
+        "panel_count": 4,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 52.81
+            },
+            {
+                "id": 1,
+                "percentage": 9.34
+            },
+            {
+                "id": 2,
+                "percentage": 18.39
+            },
+            {
+                "id": 3,
+                "percentage": 19.46
+            }
+        ]
+    },
+    "layout_12.png": {
+        "panel_count": 4,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 21.38
+            },
+            {
+                "id": 1,
+                "percentage": 11.28
+            },
+            {
+                "id": 2,
+                "percentage": 45.58
+            },
+            {
+                "id": 3,
+                "percentage": 21.77
+            }
+        ]
+    },
+    "layout_13.png": {
+        "panel_count": 4,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 7.1
+            },
+            {
+                "id": 1,
+                "percentage": 13.74
+            },
+            {
+                "id": 2,
+                "percentage": 10.38
+            },
+            {
+                "id": 3,
+                "percentage": 68.78
+            }
+        ]
+    },
+    "layout_14.png": {
+        "panel_count": 4,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 12.68
+            },
+            {
+                "id": 1,
+                "percentage": 15.49
+            },
+            {
+                "id": 2,
+                "percentage": 7.71
+            },
+            {
+                "id": 3,
+                "percentage": 64.11
+            }
+        ]
+    },
+    "layout_15.png": {
+        "panel_count": 4,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 32.72
+            },
+            {
+                "id": 1,
+                "percentage": 29.07
+            },
+            {
+                "id": 2,
+                "percentage": 13.38
+            },
+            {
+                "id": 3,
+                "percentage": 24.83
+            }
+        ]
+    },
+    "layout_17.png": {
+        "panel_count": 4,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 52.18
+            },
+            {
+                "id": 1,
+                "percentage": 12.33
+            },
+            {
+                "id": 2,
+                "percentage": 14.83
+            },
+            {
+                "id": 3,
+                "percentage": 20.66
+            }
+        ]
+    },
+    "layout_18.png": {
+        "panel_count": 3,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 34.17
+            },
+            {
+                "id": 1,
+                "percentage": 33.05
+            },
+            {
+                "id": 2,
+                "percentage": 32.79
+            }
+        ]
+    },
+    "layout_19.png": {
+        "panel_count": 3,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 27.6
+            },
+            {
+                "id": 1,
+                "percentage": 39.11
+            },
+            {
+                "id": 2,
+                "percentage": 33.29
+            }
+        ]
+    },
+    "layout_20.png": {
+        "panel_count": 3,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 13.79
+            },
+            {
+                "id": 1,
+                "percentage": 22.57
+            },
+            {
+                "id": 2,
+                "percentage": 63.64
+            }
+        ]
+    },
+    "layout_21.png": {
+        "panel_count": 3,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 63.83
+            },
+            {
+                "id": 1,
+                "percentage": 17.15
+            },
+            {
+                "id": 2,
+                "percentage": 19.02
+            }
+        ]
+    },
+    "layout_22.png": {
+        "panel_count": 3,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 39.43
+            },
+            {
+                "id": 1,
+                "percentage": 22.57
+            },
+            {
+                "id": 2,
+                "percentage": 38.0
+            }
+        ]
+    },
+    "layout_23.png": {
+        "panel_count": 3,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 63.77
+            },
+            {
+                "id": 1,
+                "percentage": 26.17
+            },
+            {
+                "id": 2,
+                "percentage": 10.05
+            }
+        ]
+    },
+    "layout_24.png": {
+        "panel_count": 3,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 26.45
+            },
+            {
+                "id": 1,
+                "percentage": 35.42
+            },
+            {
+                "id": 2,
+                "percentage": 38.13
+            }
+        ]
+    },
+    "layout_25.png": {
+        "panel_count": 3,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 51.55
+            },
+            {
+                "id": 1,
+                "percentage": 12.76
+            },
+            {
+                "id": 2,
+                "percentage": 35.69
+            }
+        ]
+    },
+    "layout_26.png": {
+        "panel_count": 3,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 33.67
+            },
+            {
+                "id": 1,
+                "percentage": 38.26
+            },
+            {
+                "id": 2,
+                "percentage": 28.07
+            }
+        ]
+    },
+    "layout_27.png": {
+        "panel_count": 3,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 51.97
+            },
+            {
+                "id": 1,
+                "percentage": 18.39
+            },
+            {
+                "id": 2,
+                "percentage": 29.64
+            }
+        ]
+    },
+    "layout_28.png": {
+        "panel_count": 3,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 28.67
+            },
+            {
+                "id": 1,
+                "percentage": 39.16
+            },
+            {
+                "id": 2,
+                "percentage": 32.18
+            }
+        ]
+    },
+    "layout_29.png": {
+        "panel_count": 3,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 63.91
+            },
+            {
+                "id": 1,
+                "percentage": 13.81
+            },
+            {
+                "id": 2,
+                "percentage": 22.28
+            }
+        ]
+    },
+    "layout_30.png": {
+        "panel_count": 3,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 33.27
+            },
+            {
+                "id": 1,
+                "percentage": 23.93
+            },
+            {
+                "id": 2,
+                "percentage": 42.8
+            }
+        ]
+    },
+    "layout_31.png": {
+        "panel_count": 3,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 33.97
+            },
+            {
+                "id": 1,
+                "percentage": 24.84
+            },
+            {
+                "id": 2,
+                "percentage": 41.2
+            }
+        ]
+    },
+    "layout_32.png": {
+        "panel_count": 3,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 33.83
+            },
+            {
+                "id": 1,
+                "percentage": 32.88
+            },
+            {
+                "id": 2,
+                "percentage": 33.29
+            }
+        ]
+    },
+    "layout_33.png": {
+        "panel_count": 3,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 33.43
+            },
+            {
+                "id": 1,
+                "percentage": 45.06
+            },
+            {
+                "id": 2,
+                "percentage": 21.51
+            }
+        ]
+    },
+    "layout_34.png": {
+        "panel_count": 5,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 5.68
+            },
+            {
+                "id": 1,
+                "percentage": 12.84
+            },
+            {
+                "id": 2,
+                "percentage": 31.39
+            },
+            {
+                "id": 3,
+                "percentage": 23.68
+            },
+            {
+                "id": 4,
+                "percentage": 26.41
+            }
+        ]
+    },
+    "layout_35.png": {
+        "panel_count": 5,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 17.09
+            },
+            {
+                "id": 1,
+                "percentage": 15.39
+            },
+            {
+                "id": 2,
+                "percentage": 14.25
+            },
+            {
+                "id": 3,
+                "percentage": 19.72
+            },
+            {
+                "id": 4,
+                "percentage": 33.56
+            }
+        ]
+    },
+    "layout_36.png": {
+        "panel_count": 5,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 26.7
+            },
+            {
+                "id": 1,
+                "percentage": 13.47
+            },
+            {
+                "id": 2,
+                "percentage": 21.57
+            },
+            {
+                "id": 3,
+                "percentage": 22.43
+            },
+            {
+                "id": 4,
+                "percentage": 15.83
+            }
+        ]
+    },
+    "layout_37.png": {
+        "panel_count": 5,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 22.74
+            },
+            {
+                "id": 1,
+                "percentage": 46.78
+            },
+            {
+                "id": 2,
+                "percentage": 11.34
+            },
+            {
+                "id": 3,
+                "percentage": 7.33
+            },
+            {
+                "id": 4,
+                "percentage": 11.81
+            }
+        ]
+    },
+    "layout_38.png": {
+        "panel_count": 5,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 35.06
+            },
+            {
+                "id": 1,
+                "percentage": 27.38
+            },
+            {
+                "id": 2,
+                "percentage": 10.15
+            },
+            {
+                "id": 3,
+                "percentage": 13.94
+            },
+            {
+                "id": 4,
+                "percentage": 13.47
+            }
+        ]
+    },
+    "layout_39.png": {
+        "panel_count": 5,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 17.23
+            },
+            {
+                "id": 1,
+                "percentage": 15.82
+            },
+            {
+                "id": 2,
+                "percentage": 45.23
+            },
+            {
+                "id": 3,
+                "percentage": 13.98
+            },
+            {
+                "id": 4,
+                "percentage": 7.74
+            }
+        ]
+    },
+    "layout_40.png": {
+        "panel_count": 5,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 15.44
+            },
+            {
+                "id": 1,
+                "percentage": 17.99
+            },
+            {
+                "id": 2,
+                "percentage": 19.64
+            },
+            {
+                "id": 3,
+                "percentage": 19.4
+            },
+            {
+                "id": 4,
+                "percentage": 27.54
+            }
+        ]
+    },
+    "layout_41.png": {
+        "panel_count": 5,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 32.24
+            },
+            {
+                "id": 1,
+                "percentage": 19.82
+            },
+            {
+                "id": 2,
+                "percentage": 12.22
+            },
+            {
+                "id": 3,
+                "percentage": 17.54
+            },
+            {
+                "id": 4,
+                "percentage": 18.18
+            }
+        ]
+    },
+    "layout_42.png": {
+        "panel_count": 5,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 35.23
+            },
+            {
+                "id": 1,
+                "percentage": 24.77
+            },
+            {
+                "id": 2,
+                "percentage": 6.01
+            },
+            {
+                "id": 3,
+                "percentage": 10.65
+            },
+            {
+                "id": 4,
+                "percentage": 23.34
+            }
+        ]
+    },
+    "layout_43.png": {
+        "panel_count": 5,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 34.8
+            },
+            {
+                "id": 1,
+                "percentage": 6.1
+            },
+            {
+                "id": 2,
+                "percentage": 19.12
+            },
+            {
+                "id": 3,
+                "percentage": 20.38
+            },
+            {
+                "id": 4,
+                "percentage": 19.59
+            }
+        ]
+    },
+    "layout_44.png": {
+        "panel_count": 5,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 34.1
+            },
+            {
+                "id": 1,
+                "percentage": 7.83
+            },
+            {
+                "id": 2,
+                "percentage": 21.33
+            },
+            {
+                "id": 3,
+                "percentage": 5.95
+            },
+            {
+                "id": 4,
+                "percentage": 30.79
+            }
+        ]
+    },
+    "layout_45.png": {
+        "panel_count": 5,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 40.48
+            },
+            {
+                "id": 1,
+                "percentage": 24.96
+            },
+            {
+                "id": 2,
+                "percentage": 4.93
+            },
+            {
+                "id": 3,
+                "percentage": 10.33
+            },
+            {
+                "id": 4,
+                "percentage": 19.29
+            }
+        ]
+    },
+    "layout_46.png": {
+        "panel_count": 5,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 18.35
+            },
+            {
+                "id": 1,
+                "percentage": 14.19
+            },
+            {
+                "id": 2,
+                "percentage": 24.03
+            },
+            {
+                "id": 3,
+                "percentage": 9.16
+            },
+            {
+                "id": 4,
+                "percentage": 34.27
+            }
+        ]
+    },
+    "layout_47.png": {
+        "panel_count": 5,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 16.09
+            },
+            {
+                "id": 1,
+                "percentage": 7.21
+            },
+            {
+                "id": 2,
+                "percentage": 15.83
+            },
+            {
+                "id": 3,
+                "percentage": 22.03
+            },
+            {
+                "id": 4,
+                "percentage": 38.84
+            }
+        ]
+    },
+    "layout_48.png": {
+        "panel_count": 5,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 17.14
+            },
+            {
+                "id": 1,
+                "percentage": 3.97
+            },
+            {
+                "id": 2,
+                "percentage": 4.53
+            },
+            {
+                "id": 3,
+                "percentage": 10.07
+            },
+            {
+                "id": 4,
+                "percentage": 64.3
+            }
+        ]
+    },
+    "layout_49.png": {
+        "panel_count": 5,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 28.7
+            },
+            {
+                "id": 1,
+                "percentage": 13.63
+            },
+            {
+                "id": 2,
+                "percentage": 19.83
+            },
+            {
+                "id": 3,
+                "percentage": 20.9
+            },
+            {
+                "id": 4,
+                "percentage": 16.94
+            }
+        ]
+    },
+    "layout_50.png": {
+        "panel_count": 5,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 24.09
+            },
+            {
+                "id": 1,
+                "percentage": 16.5
+            },
+            {
+                "id": 2,
+                "percentage": 22.03
+            },
+            {
+                "id": 3,
+                "percentage": 12.79
+            },
+            {
+                "id": 4,
+                "percentage": 24.59
+            }
+        ]
+    },
+    "layout_51.png": {
+        "panel_count": 6,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 5.07
+            },
+            {
+                "id": 1,
+                "percentage": 4.13
+            },
+            {
+                "id": 2,
+                "percentage": 8.53
+            },
+            {
+                "id": 3,
+                "percentage": 5.41
+            },
+            {
+                "id": 4,
+                "percentage": 6.28
+            },
+            {
+                "id": 5,
+                "percentage": 70.57
+            }
+        ]
+    },
+    "layout_52.png": {
+        "panel_count": 6,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 10.26
+            },
+            {
+                "id": 1,
+                "percentage": 6.21
+            },
+            {
+                "id": 2,
+                "percentage": 34.74
+            },
+            {
+                "id": 3,
+                "percentage": 15.65
+            },
+            {
+                "id": 4,
+                "percentage": 21.51
+            },
+            {
+                "id": 5,
+                "percentage": 11.63
+            }
+        ]
+    },
+    "layout_53.png": {
+        "panel_count": 6,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 5.92
+            },
+            {
+                "id": 1,
+                "percentage": 8.28
+            },
+            {
+                "id": 2,
+                "percentage": 9.74
+            },
+            {
+                "id": 3,
+                "percentage": 1.79
+            },
+            {
+                "id": 4,
+                "percentage": 7.83
+            },
+            {
+                "id": 5,
+                "percentage": 66.44
+            }
+        ]
+    },
+    "layout_54.png": {
+        "panel_count": 6,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 34.55
+            },
+            {
+                "id": 1,
+                "percentage": 17.42
+            },
+            {
+                "id": 2,
+                "percentage": 13.1
+            },
+            {
+                "id": 3,
+                "percentage": 21.73
+            },
+            {
+                "id": 4,
+                "percentage": 4.46
+            },
+            {
+                "id": 5,
+                "percentage": 8.73
+            }
+        ]
+    },
+    "layout_55.png": {
+        "panel_count": 8,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 2.48
+            },
+            {
+                "id": 1,
+                "percentage": 5.8
+            },
+            {
+                "id": 2,
+                "percentage": 8.8
+            },
+            {
+                "id": 3,
+                "percentage": 4.03
+            },
+            {
+                "id": 4,
+                "percentage": 41.8
+            },
+            {
+                "id": 5,
+                "percentage": 4.0
+            },
+            {
+                "id": 6,
+                "percentage": 7.91
+            },
+            {
+                "id": 7,
+                "percentage": 25.17
+            }
+        ]
+    },
+    "layout_56.png": {
+        "panel_count": 7,
+        "panels": [
+            {
+                "id": 0,
+                "percentage": 12.49
+            },
+            {
+                "id": 1,
+                "percentage": 5.86
+            },
+            {
+                "id": 2,
+                "percentage": 51.41
+            },
+            {
+                "id": 3,
+                "percentage": 5.57
+            },
+            {
+                "id": 4,
+                "percentage": 5.96
+            },
+            {
+                "id": 5,
+                "percentage": 1.82
+            },
+            {
+                "id": 6,
+                "percentage": 16.91
+            }
+        ]
+    }
+}
